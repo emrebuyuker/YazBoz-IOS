@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		385DA37323C4EAAF00129F49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385DA37223C4EAAF00129F49 /* AppDelegate.swift */; };
+		385DA37523C4EAAF00129F49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385DA37423C4EAAF00129F49 /* SceneDelegate.swift */; };
+		385DA37723C4EAAF00129F49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385DA37623C4EAAF00129F49 /* ViewController.swift */; };
+		385DA37A23C4EAAF00129F49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385DA37823C4EAAF00129F49 /* Main.storyboard */; };
+		385DA37C23C4EAB600129F49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385DA37B23C4EAB600129F49 /* Assets.xcassets */; };
+		385DA37F23C4EAB600129F49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385DA37D23C4EAB600129F49 /* LaunchScreen.storyboard */; };
+		385DA3DF23C5040300129F49 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385DA3DE23C5040300129F49 /* DetailViewController.swift */; };
+		385DA3E123C5062300129F49 /* Detail101ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385DA3E023C5062300129F49 /* Detail101ViewController.swift */; };
+		385DA3E623C50F7900129F49 /* FourRowsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385DA3E523C50F7900129F49 /* FourRowsTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		385DA36F23C4EAAF00129F49 /* Yaz Boz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yaz Boz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		385DA37223C4EAAF00129F49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		385DA37423C4EAAF00129F49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		385DA37623C4EAAF00129F49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		385DA37923C4EAAF00129F49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		385DA37B23C4EAB600129F49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		385DA37E23C4EAB600129F49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		385DA38023C4EAB600129F49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		385DA3DE23C5040300129F49 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		385DA3E023C5062300129F49 /* Detail101ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail101ViewController.swift; sourceTree = "<group>"; };
+		385DA3E523C50F7900129F49 /* FourRowsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourRowsTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		385DA36C23C4EAAF00129F49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		385DA36623C4EAAF00129F49 = {
+			isa = PBXGroup;
+			children = (
+				385DA37123C4EAAF00129F49 /* Yaz Boz */,
+				385DA37023C4EAAF00129F49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		385DA37023C4EAAF00129F49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				385DA36F23C4EAAF00129F49 /* Yaz Boz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		385DA37123C4EAAF00129F49 /* Yaz Boz */ = {
+			isa = PBXGroup;
+			children = (
+				385DA3E223C50D4E00129F49 /* Cell */,
+				385DA38D23C4F5C600129F49 /* Screens */,
+				385DA37223C4EAAF00129F49 /* AppDelegate.swift */,
+				385DA37B23C4EAB600129F49 /* Assets.xcassets */,
+				385DA38023C4EAB600129F49 /* Info.plist */,
+				385DA37D23C4EAB600129F49 /* LaunchScreen.storyboard */,
+				385DA37823C4EAAF00129F49 /* Main.storyboard */,
+				385DA37423C4EAAF00129F49 /* SceneDelegate.swift */,
+				385DA37623C4EAAF00129F49 /* ViewController.swift */,
+			);
+			path = "Yaz Boz";
+			sourceTree = "<group>";
+		};
+		385DA38D23C4F5C600129F49 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				385DA3DE23C5040300129F49 /* DetailViewController.swift */,
+				385DA3E023C5062300129F49 /* Detail101ViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		385DA3E223C50D4E00129F49 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				385DA3E523C50F7900129F49 /* FourRowsTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		385DA36E23C4EAAF00129F49 /* Yaz Boz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 385DA38323C4EAB600129F49 /* Build configuration list for PBXNativeTarget "Yaz Boz" */;
+			buildPhases = (
+				385DA36B23C4EAAF00129F49 /* Sources */,
+				385DA36C23C4EAAF00129F49 /* Frameworks */,
+				385DA36D23C4EAAF00129F49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yaz Boz";
+			productName = "Yaz Boz";
+			productReference = 385DA36F23C4EAAF00129F49 /* Yaz Boz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		385DA36723C4EAAF00129F49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Emre BÜYÜKER";
+				TargetAttributes = {
+					385DA36E23C4EAAF00129F49 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 385DA36A23C4EAAF00129F49 /* Build configuration list for PBXProject "Yaz Boz" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 385DA36623C4EAAF00129F49;
+			productRefGroup = 385DA37023C4EAAF00129F49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				385DA36E23C4EAAF00129F49 /* Yaz Boz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		385DA36D23C4EAAF00129F49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385DA37F23C4EAB600129F49 /* LaunchScreen.storyboard in Resources */,
+				385DA37C23C4EAB600129F49 /* Assets.xcassets in Resources */,
+				385DA37A23C4EAAF00129F49 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		385DA36B23C4EAAF00129F49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385DA37723C4EAAF00129F49 /* ViewController.swift in Sources */,
+				385DA3DF23C5040300129F49 /* DetailViewController.swift in Sources */,
+				385DA37323C4EAAF00129F49 /* AppDelegate.swift in Sources */,
+				385DA37523C4EAAF00129F49 /* SceneDelegate.swift in Sources */,
+				385DA3E623C50F7900129F49 /* FourRowsTableViewCell.swift in Sources */,
+				385DA3E123C5062300129F49 /* Detail101ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		385DA37823C4EAAF00129F49 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				385DA37923C4EAAF00129F49 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		385DA37D23C4EAB600129F49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				385DA37E23C4EAB600129F49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		385DA38123C4EAB600129F49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		385DA38223C4EAB600129F49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		385DA38423C4EAB600129F49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A9ZTFRX9B5;
+				INFOPLIST_FILE = "Yaz Boz/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buyukeryazilim.Yaz-Boz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		385DA38523C4EAB600129F49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A9ZTFRX9B5;
+				INFOPLIST_FILE = "Yaz Boz/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buyukeryazilim.Yaz-Boz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		385DA36A23C4EAAF00129F49 /* Build configuration list for PBXProject "Yaz Boz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385DA38123C4EAB600129F49 /* Debug */,
+				385DA38223C4EAB600129F49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		385DA38323C4EAB600129F49 /* Build configuration list for PBXNativeTarget "Yaz Boz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385DA38423C4EAB600129F49 /* Debug */,
+				385DA38523C4EAB600129F49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 385DA36723C4EAAF00129F49 /* Project object */;
+}
