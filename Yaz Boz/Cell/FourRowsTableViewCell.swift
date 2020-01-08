@@ -31,5 +31,6 @@ class FourRowsTableViewCell: UITableViewCell {
 		self.row3Label.text = row3
 		self.row4Label.text = row4
 		self.indexLabel.text = index
+		
 	}
 }
