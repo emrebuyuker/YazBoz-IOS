@@ -1,14 +1,14 @@
 //
-//  Detail101ViewController.swift
+//  DetailOkeyViewController.swift
 //  Yaz Boz
 //
-//  Created by Emre BÜYÜKER on 7.01.2020.
+//  Created by Emre BÜYÜKER on 9.01.2020.
 //  Copyright © 2020 Emre BÜYÜKER. All rights reserved.
 //
 
 import UIKit
 
-class Detail101ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DetailOkeyViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	
 	var skor1String: String!
 	var skor2String: String!
@@ -26,7 +26,7 @@ class Detail101ViewController: UIViewController, UITableViewDelegate, UITableVie
 	var skor2IntArray = [String]()
 	var skor3IntArray = [String]()
 	var skor4IntArray = [String]()
-
+	
 	@IBOutlet weak var player1: UITextField!
 	@IBOutlet weak var player2: UITextField!
 	@IBOutlet weak var player3: UITextField!
@@ -40,7 +40,7 @@ class Detail101ViewController: UIViewController, UITableViewDelegate, UITableVie
 	@IBOutlet weak var tableView: UITableView!
 	
 	override func viewDidLoad() {
-        super.viewDidLoad()
+		super.viewDidLoad()
 		
 		self.tableView.delegate = self
 		self.tableView.dataSource = self
@@ -50,7 +50,7 @@ class Detail101ViewController: UIViewController, UITableViewDelegate, UITableVie
 		self.skor3Int = 0
 		self.skor4Int = 0
 		
-    }
+	}
 	
 	@IBAction func skorAddButtonClick(_ sender: Any) {
 		
@@ -130,7 +130,7 @@ class Detail101ViewController: UIViewController, UITableViewDelegate, UITableVie
 			cell.fourRowsTableViewCellMethod(row1: "0", row2: "0", row3: "0", row4: "0", index: "")
 			return cell
 		}
-			
+		
 		if (indexPath.row == self.skor1IntArray.count) {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FourRowsTableViewCell
 			cell.fourRowsTableViewCellMethod(row1: "\(String(describing: self.skor1Int!))", row2: "\(String(describing: self.skor2Int!))", row3: "\(String(describing: self.skor3Int!))", row4: "\(String(describing: self.skor4Int!))", index: "T")
