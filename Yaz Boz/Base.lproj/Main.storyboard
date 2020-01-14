@@ -1121,6 +1121,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="OKEY" id="jXA-un-INX"/>
                     <connections>
+                        <outlet property="finishLabel" destination="Qea-C4-nIz" id="3tS-vG-qOh"/>
                         <outlet property="player1" destination="GXS-zl-k1s" id="6Zn-li-NhT"/>
                         <outlet property="player2" destination="08e-VK-6pC" id="Imb-8E-P8G"/>
                         <outlet property="player3" destination="5qI-0i-dtT" id="EW3-nc-8oe"/>

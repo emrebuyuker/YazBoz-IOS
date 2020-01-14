@@ -19,6 +19,7 @@ class DetailOkeyViewController: UIViewController, UITableViewDelegate, UITableVi
 	var skor2Int: Int?
 	var skor3Int: Int?
 	var skor4Int: Int?
+	var skorTotalInt: Int!
 	
 	var row: Int?
 	
@@ -38,6 +39,7 @@ class DetailOkeyViewController: UIViewController, UITableViewDelegate, UITableVi
 	@IBOutlet weak var skor4: UITextField!
 	
 	@IBOutlet weak var tableView: UITableView!
+	@IBOutlet weak var finishLabel: UITextField!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -54,6 +56,8 @@ class DetailOkeyViewController: UIViewController, UITableViewDelegate, UITableVi
 	
 	@IBAction func skorAddButtonClick(_ sender: Any) {
 		
+		self.skorTotalInt = Int(self.finishLabel.text ?? "0")
+		
 		view.endEditing(true)
 		
 		if (self.skor1.text!.count == 0 || self.skor2.text!.count == 0 || self.skor3.text!.count == 0 || self.skor4.text!.count == 0) {
@@ -68,6 +72,7 @@ class DetailOkeyViewController: UIViewController, UITableViewDelegate, UITableVi
 		
 		if ((self.skor1.text) == nil) {
 			self.skor1Int = ((Int((skor1String) ?? "0") ?? 0) + 0)
+			self.skor1Int = Int(self.skorTotalInt) - (self.skor1Int ?? 0)
 			self.skor1String = "\(String(describing: self.skor1Int))"
 			self.skor1IntArray.append("0")
 		}
@@ -135,7 +140,11 @@ class DetailOkeyViewController: UIViewController, UITableViewDelegate, UITableVi
 		
 		if (indexPath.row == self.skor1IntArray.count) {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FourRowsTableViewCell
-			cell.fourRowsTableViewCellMethod(row1: "\(String(describing: self.skor1Int!))", row2: "\(String(describing: self.skor2Int!))", row3: "\(String(describing: self.skor3Int!))", row4: "\(String(describing: self.skor4Int!))", index: "T")
+			cell.fourRowsTableViewCellMethod(row1: "\(String(describing: self.skorTotalInt - self.skor1Int!))",
+				row2: "\(String(describing: self.skorTotalInt - self.skor2Int!))",
+				row3: "\(String(describing: self.skorTotalInt - self.skor3Int!))",
+				row4: "\(String(describing: self.skorTotalInt - self.skor4Int!))",
+				index: "T")
 			return cell
 		} else {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FourRowsTableViewCell
