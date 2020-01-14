@@ -730,7 +730,7 @@
                                 </constraints>
                                 <state key="normal" title="SONUÇ"/>
                                 <connections>
-                                    <segue destination="lGH-gS-rCO" kind="show" id="QiE-k9-28R"/>
+                                    <segue destination="lGH-gS-rCO" kind="show" identifier="toResultPaired" id="QiE-k9-28R"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1091,7 +1091,7 @@
                                 </constraints>
                                 <state key="normal" title="SONUÇ"/>
                                 <connections>
-                                    <segue destination="c1D-dZ-G2y" kind="show" id="Pqd-nH-eGa"/>
+                                    <segue destination="c1D-dZ-G2y" kind="show" identifier="toResultOkey" id="Pqd-nH-eGa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1375,7 +1375,7 @@
                                 </constraints>
                                 <state key="normal" title="SONUÇ"/>
                                 <connections>
-                                    <segue destination="9aO-cc-GuI" kind="show" id="MTO-SN-J9e"/>
+                                    <segue destination="9aO-cc-GuI" kind="show" identifier="toResultOkeyPaired" id="MTO-SN-J9e"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1405,6 +1405,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="EŞLİ OKEY" id="OML-rq-oys"/>
                     <connections>
+                        <outlet property="finishLabel" destination="Gww-3k-ohY" id="GvZ-02-Mj4"/>
                         <outlet property="player1" destination="Rgt-8P-6k3" id="rgb-p2-JaQ"/>
                         <outlet property="player2" destination="JSe-fs-9Ed" id="TVa-et-qKB"/>
                         <outlet property="skor1" destination="0ZM-rH-m4L" id="kw8-xW-sXf"/>
@@ -1617,7 +1618,7 @@
                                 </constraints>
                                 <state key="normal" title="SONUÇ"/>
                                 <connections>
-                                    <segue destination="IB7-I9-Fbg" kind="show" id="2MX-bI-Yiy"/>
+                                    <segue destination="IB7-I9-Fbg" kind="show" identifier="toResultBatakPaired" id="2MX-bI-Yiy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1941,7 +1942,7 @@
                                 </constraints>
                                 <state key="normal" title="SONUÇ"/>
                                 <connections>
-                                    <segue destination="PNJ-X6-UHS" kind="show" id="zVT-CJ-tAy"/>
+                                    <segue destination="PNJ-X6-UHS" kind="show" identifier="toResultBatak" id="zVT-CJ-tAy"/>
                                 </connections>
                             </button>
                         </subviews>

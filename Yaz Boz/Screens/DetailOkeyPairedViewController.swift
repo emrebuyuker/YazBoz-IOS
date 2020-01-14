@@ -15,6 +15,7 @@ class DetailOkeyPairedViewController: UIViewController, UITableViewDelegate, UIT
 	
 	var skor1Int: Int?
 	var skor2Int: Int?
+	var skorTotalInt: Int!
 	
 	var row: Int?
 	
@@ -28,6 +29,7 @@ class DetailOkeyPairedViewController: UIViewController, UITableViewDelegate, UIT
 	@IBOutlet weak var skor2: UITextField!
 	
 	@IBOutlet weak var tableView: UITableView!
+	@IBOutlet weak var finishLabel: UITextField!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -40,6 +42,8 @@ class DetailOkeyPairedViewController: UIViewController, UITableViewDelegate, UIT
 	}
 	
 	@IBAction func skorAddButtonClick(_ sender: Any) {
+		
+		self.skorTotalInt = Int(self.finishLabel.text ?? "0")
 		
 		view.endEditing(true)
 		
@@ -96,7 +100,12 @@ class DetailOkeyPairedViewController: UIViewController, UITableViewDelegate, UIT
 		
 		if (indexPath.row == self.skor1IntArray.count) {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TwoRowsTableViewCell
-			cell.twoRowsTableViewCellMethod(row1: "\(String(describing: self.skor1Int!))", row2: "\(String(describing: self.skor2Int!))", index: "T")
+			cell.twoRowsTableViewCellMethod(row1: "\(String(describing: self.skorTotalInt - self.skor1Int!))", row2: "\(String(describing: self.skorTotalInt - self.skor2Int!))", index: "T")
+			
+			if (self.skorTotalInt - self.skor1Int! <= 0 || self.skorTotalInt - self.skor2Int! <= 0) {
+				performSegue(withIdentifier: "toResultOkeyPaired", sender: nil)
+			}
+			
 			return cell
 		} else {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TwoRowsTableViewCell

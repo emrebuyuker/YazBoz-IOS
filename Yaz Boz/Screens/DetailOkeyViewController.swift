@@ -72,7 +72,6 @@ class DetailOkeyViewController: UIViewController, UITableViewDelegate, UITableVi
 		
 		if ((self.skor1.text) == nil) {
 			self.skor1Int = ((Int((skor1String) ?? "0") ?? 0) + 0)
-			self.skor1Int = Int(self.skorTotalInt) - (self.skor1Int ?? 0)
 			self.skor1String = "\(String(describing: self.skor1Int))"
 			self.skor1IntArray.append("0")
 		}
@@ -145,6 +144,11 @@ class DetailOkeyViewController: UIViewController, UITableViewDelegate, UITableVi
 				row3: "\(String(describing: self.skorTotalInt - self.skor3Int!))",
 				row4: "\(String(describing: self.skorTotalInt - self.skor4Int!))",
 				index: "T")
+			
+			if (self.skorTotalInt - self.skor1Int! <= 0 || self.skorTotalInt - self.skor2Int! <= 0 || self.skorTotalInt - self.skor3Int! <= 0 || self.skorTotalInt - self.skor4Int! <= 0) {
+				performSegue(withIdentifier: "toResultOkey", sender: nil)
+			}
+			
 			return cell
 		} else {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FourRowsTableViewCell
