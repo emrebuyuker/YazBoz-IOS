@@ -9,22 +9,26 @@
 import UIKit
 
 class Result101PairedViewController: UIViewController {
-
+	
+	var player1 = String()
+    var player2 = String()
+	
+	var skor1: Int!
+	var skor2: Int!
+	
+	@IBOutlet weak var player1Label: UILabel!
+	@IBOutlet weak var player2Label: UILabel!
+	
+	@IBOutlet weak var skor1Label: UILabel!
+	@IBOutlet weak var skor2Label: UILabel!
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+		
+		self.player1Label.text = self.player1
+		self.player2Label.text = self.player2
+		
+		self.skor1Label.text = "\(String(describing: self.skor1!))"
+		self.skor2Label.text = "\(String(describing: self.skor2!))"
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -129,20 +129,20 @@ class DetailBatakPairedViewController: UIViewController, UITableViewDelegate, UI
 		
 		let resultVC = segue.destination as! ResultBatakPairedViewController
 		
-//		if (self.player1.text?.count == 0) {
-//			resultVC.player1 = "Oyuncu1"
-//		} else {
-//			resultVC.player1 = self.player1.text!
-//		}
-//		
-//		if (self.player2.text?.count == 0) {
-//			resultVC.player2 = "Oyuncu2"
-//		} else {
-//			resultVC.player2 = self.player2.text!
-//		}
-//		
-//		resultVC.skor1 = self.skor1Int
-//		resultVC.skor2 = self.skor2Int
+		if (self.player1.text?.count == 0) {
+			resultVC.player1 = "Oyuncu1"
+		} else {
+			resultVC.player1 = self.player1.text!
+		}
+		
+		if (self.player2.text?.count == 0) {
+			resultVC.player2 = "Oyuncu2"
+		} else {
+			resultVC.player2 = self.player2.text!
+		}
+		
+		resultVC.skor1 = self.skor1Int
+		resultVC.skor2 = self.skor2Int
 	}
 }
 

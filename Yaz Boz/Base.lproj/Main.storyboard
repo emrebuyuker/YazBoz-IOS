@@ -782,17 +782,69 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winningIcon" translatesAutoresizingMaskIntoConstraints="NO" id="rmt-eJ-sT2">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wzW-yD-Ze0">
+                                <rect key="frame" x="94" y="214" width="187.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9d3-dK-jmw">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7M9-vt-ySl">
+                                        <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="emx-3e-7NA"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="54k-DN-f4q">
+                                <rect key="frame" x="94" y="260" width="187.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSV-t4-1da">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hln-96-GHp">
+                                        <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FMN-Ry-m9M"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="54k-DN-f4q" firstAttribute="centerX" secondItem="1s4-pp-ubp" secondAttribute="centerX" id="0pz-Se-Y2a"/>
                             <constraint firstItem="1s4-pp-ubp" firstAttribute="bottom" secondItem="rmt-eJ-sT2" secondAttribute="bottom" id="3dB-XO-IUx"/>
                             <constraint firstItem="rmt-eJ-sT2" firstAttribute="leading" secondItem="1s4-pp-ubp" secondAttribute="leading" id="8N5-jb-3DG"/>
+                            <constraint firstItem="wzW-yD-Ze0" firstAttribute="width" secondItem="49g-uL-wc1" secondAttribute="width" multiplier="0.5" id="9NA-tK-vAd"/>
                             <constraint firstItem="1s4-pp-ubp" firstAttribute="trailing" secondItem="rmt-eJ-sT2" secondAttribute="trailing" id="BUy-sJ-dE7"/>
+                            <constraint firstItem="54k-DN-f4q" firstAttribute="top" secondItem="wzW-yD-Ze0" secondAttribute="bottom" constant="16" id="F6Y-Vh-qNL"/>
                             <constraint firstItem="rmt-eJ-sT2" firstAttribute="top" secondItem="1s4-pp-ubp" secondAttribute="top" id="N91-5s-FcH"/>
+                            <constraint firstItem="wzW-yD-Ze0" firstAttribute="top" secondItem="1s4-pp-ubp" secondAttribute="top" constant="170" id="aPt-SF-oLx"/>
+                            <constraint firstItem="54k-DN-f4q" firstAttribute="width" secondItem="49g-uL-wc1" secondAttribute="width" multiplier="0.5" id="avk-Vq-wz2"/>
+                            <constraint firstItem="wzW-yD-Ze0" firstAttribute="centerX" secondItem="1s4-pp-ubp" secondAttribute="centerX" id="mT7-xN-fHw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1s4-pp-ubp"/>
                     </view>
                     <navigationItem key="navigationItem" title="TEBRİKLER" id="lAg-QJ-b3h"/>
+                    <connections>
+                        <outlet property="player1Label" destination="9d3-dK-jmw" id="35d-wv-x3g"/>
+                        <outlet property="player2Label" destination="VSV-t4-1da" id="4Pn-gm-tcE"/>
+                        <outlet property="skor1Label" destination="7M9-vt-ySl" id="d95-za-LV1"/>
+                        <outlet property="skor2Label" destination="Hln-96-GHp" id="xfz-4J-1CO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y3w-RJ-Y8O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -829,7 +881,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EN7-j0-IIQ">
                                         <rect key="frame" x="90" y="0.0" width="89.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08e-VK-6pC">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08e-VK-6pC">
                                                 <rect key="frame" x="4" y="0.0" width="81.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -846,7 +898,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="an0-08-RxR">
                                         <rect key="frame" x="179.5" y="0.0" width="90" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qI-0i-dtT">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qI-0i-dtT">
                                                 <rect key="frame" x="4" y="0.0" width="82" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -863,7 +915,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C3d-dK-bYg">
                                         <rect key="frame" x="269.5" y="0.0" width="89.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 4" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UIa-gw-5Kw">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 4" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UIa-gw-5Kw">
                                                 <rect key="frame" x="4" y="0.0" width="85.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1148,17 +1200,119 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winningIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Z95-Qh-9u6">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FlN-0L-8Mz">
+                                <rect key="frame" x="94" y="176" width="187.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvi-YB-7KW">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRo-Rl-BR1">
+                                        <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RFC-Sy-a4M"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2cZ-lA-5op">
+                                <rect key="frame" x="94" y="222" width="187.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9d-iP-Ot3">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJ3-ZZ-MHo">
+                                        <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xvW-Ha-6QB"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uZx-ve-XKi">
+                                <rect key="frame" x="94" y="268" width="187.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUe-vZ-zyv">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2E-XJ-RX5">
+                                        <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vyf-IT-YDC"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XzE-k7-7FT">
+                                <rect key="frame" x="94" y="314" width="187.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cA-67-Vc3">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOQ-w4-dj0">
+                                        <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aUC-Em-R45"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="uZx-ve-XKi" firstAttribute="centerX" secondItem="2cZ-lA-5op" secondAttribute="centerX" id="1Al-a3-d7N"/>
+                            <constraint firstItem="uZx-ve-XKi" firstAttribute="width" secondItem="EEx-bK-B1q" secondAttribute="width" multiplier="0.5" id="2MH-3e-37C"/>
                             <constraint firstItem="sSc-Ip-ihw" firstAttribute="bottom" secondItem="Z95-Qh-9u6" secondAttribute="bottom" id="5XN-mJ-5rt"/>
+                            <constraint firstItem="XzE-k7-7FT" firstAttribute="width" secondItem="EEx-bK-B1q" secondAttribute="width" multiplier="0.5" id="8ta-kW-WmY"/>
+                            <constraint firstItem="FlN-0L-8Mz" firstAttribute="top" secondItem="sSc-Ip-ihw" secondAttribute="top" constant="132" id="CNr-cJ-v2e"/>
+                            <constraint firstItem="FlN-0L-8Mz" firstAttribute="width" secondItem="EEx-bK-B1q" secondAttribute="width" multiplier="0.5" id="Dp1-L4-QvZ"/>
+                            <constraint firstItem="2cZ-lA-5op" firstAttribute="top" secondItem="FlN-0L-8Mz" secondAttribute="bottom" constant="16" id="McG-ZA-QJT"/>
+                            <constraint firstItem="FlN-0L-8Mz" firstAttribute="centerX" secondItem="sSc-Ip-ihw" secondAttribute="centerX" id="S5K-Jg-7HA"/>
+                            <constraint firstItem="2cZ-lA-5op" firstAttribute="centerX" secondItem="FlN-0L-8Mz" secondAttribute="centerX" id="T1A-P2-b70"/>
                             <constraint firstItem="sSc-Ip-ihw" firstAttribute="trailing" secondItem="Z95-Qh-9u6" secondAttribute="trailing" id="U9b-1I-MK7"/>
+                            <constraint firstItem="uZx-ve-XKi" firstAttribute="top" secondItem="2cZ-lA-5op" secondAttribute="bottom" constant="16" id="UhO-VS-imF"/>
+                            <constraint firstItem="XzE-k7-7FT" firstAttribute="centerX" secondItem="uZx-ve-XKi" secondAttribute="centerX" id="YvJ-d8-jKj"/>
                             <constraint firstItem="Z95-Qh-9u6" firstAttribute="top" secondItem="sSc-Ip-ihw" secondAttribute="top" id="bIn-rX-4A0"/>
                             <constraint firstItem="Z95-Qh-9u6" firstAttribute="leading" secondItem="sSc-Ip-ihw" secondAttribute="leading" id="cpM-TV-rcO"/>
+                            <constraint firstItem="XzE-k7-7FT" firstAttribute="top" secondItem="uZx-ve-XKi" secondAttribute="bottom" constant="16" id="geY-HU-Edo"/>
+                            <constraint firstItem="2cZ-lA-5op" firstAttribute="width" secondItem="EEx-bK-B1q" secondAttribute="width" multiplier="0.5" id="in4-zW-rkJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sSc-Ip-ihw"/>
                     </view>
                     <navigationItem key="navigationItem" title="TEBRİKLER" id="UYo-JE-eYt"/>
+                    <connections>
+                        <outlet property="player1Label" destination="vvi-YB-7KW" id="zb0-90-PyA"/>
+                        <outlet property="player2Label" destination="q9d-iP-Ot3" id="V9Y-DC-8S0"/>
+                        <outlet property="player3Label" destination="lUe-vZ-zyv" id="wyy-3N-Hhj"/>
+                        <outlet property="player4Label" destination="2cA-67-Vc3" id="rKF-8u-Cyg"/>
+                        <outlet property="skor1Label" destination="HRo-Rl-BR1" id="0xj-mQ-t1r"/>
+                        <outlet property="skor2Label" destination="FJ3-ZZ-MHo" id="fMO-Y0-lTE"/>
+                        <outlet property="skor3Label" destination="R2E-XJ-RX5" id="Ze9-dZ-ymh"/>
+                        <outlet property="skor4Label" destination="YOQ-w4-dj0" id="kpy-Jz-Wxj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ygu-l5-jyl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1428,17 +1582,69 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winningIcon" translatesAutoresizingMaskIntoConstraints="NO" id="jyk-hc-dVs">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lju-ka-43e">
+                                <rect key="frame" x="94" y="214" width="187.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HT3-ew-wEe">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2n-Jy-bBC">
+                                        <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6YC-UZ-RP8"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pde-2A-d67">
+                                <rect key="frame" x="94" y="260" width="187.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3N8-BQ-Yb5">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28y-hp-bfn">
+                                        <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yan-QD-Vc3"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="pde-2A-d67" firstAttribute="centerX" secondItem="lju-ka-43e" secondAttribute="centerX" id="6Nx-3f-F7o"/>
                             <constraint firstItem="VR5-bs-uRZ" firstAttribute="bottom" secondItem="jyk-hc-dVs" secondAttribute="bottom" id="7EK-M1-VaH"/>
+                            <constraint firstItem="pde-2A-d67" firstAttribute="centerX" secondItem="VR5-bs-uRZ" secondAttribute="centerX" id="ILo-ID-Lsx"/>
+                            <constraint firstItem="pde-2A-d67" firstAttribute="top" secondItem="lju-ka-43e" secondAttribute="bottom" constant="16" id="SMo-zo-AvS"/>
                             <constraint firstItem="jyk-hc-dVs" firstAttribute="leading" secondItem="VR5-bs-uRZ" secondAttribute="leading" id="UaH-C7-0aB"/>
                             <constraint firstItem="jyk-hc-dVs" firstAttribute="top" secondItem="VR5-bs-uRZ" secondAttribute="top" id="UhY-s3-vVG"/>
                             <constraint firstItem="VR5-bs-uRZ" firstAttribute="trailing" secondItem="jyk-hc-dVs" secondAttribute="trailing" id="YGv-gy-M58"/>
+                            <constraint firstItem="lju-ka-43e" firstAttribute="width" secondItem="2sX-6e-mTW" secondAttribute="width" multiplier="0.5" id="cdb-2V-9Fd"/>
+                            <constraint firstItem="pde-2A-d67" firstAttribute="width" secondItem="2sX-6e-mTW" secondAttribute="width" multiplier="0.5" id="eOL-2g-ory"/>
+                            <constraint firstItem="lju-ka-43e" firstAttribute="top" secondItem="VR5-bs-uRZ" secondAttribute="top" constant="170" id="jgK-ZL-x0q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VR5-bs-uRZ"/>
                     </view>
                     <navigationItem key="navigationItem" title="TEBRİKLER" id="Vlg-Op-1dc"/>
+                    <connections>
+                        <outlet property="player1Label" destination="HT3-ew-wEe" id="cyq-Uy-uGv"/>
+                        <outlet property="player2Label" destination="3N8-BQ-Yb5" id="doE-g5-YiX"/>
+                        <outlet property="skor1Label" destination="i2n-Jy-bBC" id="UaB-H5-hG5"/>
+                        <outlet property="skor2Label" destination="28y-hp-bfn" id="kRj-33-swX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sxp-B3-qNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1475,7 +1681,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezL-24-5gS">
                                         <rect key="frame" x="179.5" y="0.0" width="179.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5aG-8K-83j">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5aG-8K-83j">
                                                 <rect key="frame" x="4" y="0.0" width="171.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1670,17 +1876,69 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winningIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bmF-ff-Syg">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xHJ-0r-n2Z">
+                                <rect key="frame" x="94" y="214" width="187.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZw-lE-iP9">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgJ-fZ-eTw">
+                                        <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="tNb-wl-3X8"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CMO-64-eyh">
+                                <rect key="frame" x="94" y="260" width="187.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmU-wm-RCD">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi0-WA-SoM">
+                                        <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mcV-gN-rMI"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="bmF-ff-Syg" firstAttribute="top" secondItem="BHa-SI-y87" secondAttribute="top" id="7Ga-YQ-Uja"/>
                             <constraint firstItem="bmF-ff-Syg" firstAttribute="leading" secondItem="BHa-SI-y87" secondAttribute="leading" id="OgC-K3-Y5p"/>
+                            <constraint firstItem="CMO-64-eyh" firstAttribute="centerX" secondItem="xHJ-0r-n2Z" secondAttribute="centerX" id="RE1-0Z-lVp"/>
+                            <constraint firstItem="xHJ-0r-n2Z" firstAttribute="width" secondItem="scv-qi-kgA" secondAttribute="width" multiplier="0.5" id="S1g-0G-Nsm"/>
+                            <constraint firstItem="CMO-64-eyh" firstAttribute="top" secondItem="xHJ-0r-n2Z" secondAttribute="bottom" constant="16" id="Wa4-c8-oWO"/>
                             <constraint firstItem="BHa-SI-y87" firstAttribute="bottom" secondItem="bmF-ff-Syg" secondAttribute="bottom" id="fAQ-Wk-JUU"/>
+                            <constraint firstItem="xHJ-0r-n2Z" firstAttribute="top" secondItem="BHa-SI-y87" secondAttribute="top" constant="170" id="hVm-cg-hd2"/>
+                            <constraint firstItem="xHJ-0r-n2Z" firstAttribute="centerX" secondItem="BHa-SI-y87" secondAttribute="centerX" id="nLc-j2-Bmh"/>
+                            <constraint firstItem="CMO-64-eyh" firstAttribute="width" secondItem="scv-qi-kgA" secondAttribute="width" multiplier="0.5" id="oBw-PX-aEv"/>
                             <constraint firstItem="BHa-SI-y87" firstAttribute="trailing" secondItem="bmF-ff-Syg" secondAttribute="trailing" id="uda-nc-atI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BHa-SI-y87"/>
                     </view>
                     <navigationItem key="navigationItem" title="TEBRİKLER" id="5an-R2-Yih"/>
+                    <connections>
+                        <outlet property="player1Label" destination="rZw-lE-iP9" id="bWX-jg-z5K"/>
+                        <outlet property="player2Label" destination="bmU-wm-RCD" id="cKn-bX-Cdg"/>
+                        <outlet property="skor1Label" destination="AgJ-fZ-eTw" id="wvs-a2-4ee"/>
+                        <outlet property="skor2Label" destination="Wi0-WA-SoM" id="5qO-sV-JPK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FfK-Bj-Khm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1717,7 +1975,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lga-Qs-kdm">
                                         <rect key="frame" x="90" y="0.0" width="89.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4QN-11-pGa">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4QN-11-pGa">
                                                 <rect key="frame" x="4" y="0.0" width="81.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1734,7 +1992,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EL5-S6-VGp">
                                         <rect key="frame" x="179.5" y="0.0" width="90" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ia5-gW-uI9">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ia5-gW-uI9">
                                                 <rect key="frame" x="4" y="0.0" width="82" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1751,7 +2009,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRO-fC-iMx">
                                         <rect key="frame" x="269.5" y="0.0" width="89.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 4" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i3h-BS-NvD">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 4" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i3h-BS-NvD">
                                                 <rect key="frame" x="4" y="0.0" width="85.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1998,17 +2256,119 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winningIcon" translatesAutoresizingMaskIntoConstraints="NO" id="laa-mp-4E9">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xn6-m4-U9i">
+                                <rect key="frame" x="94" y="176" width="187.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRJ-Pa-0aZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNV-Ut-h3k">
+                                        <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JLR-YV-Ezi"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fj2-xy-urB">
+                                <rect key="frame" x="94" y="222" width="187.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSB-zX-FcS">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zI-e5-8cg">
+                                        <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2TP-la-b7R"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="scZ-5f-15d">
+                                <rect key="frame" x="94" y="268" width="187.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4u-l9-iyj">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hf-8w-ehg">
+                                        <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Yzk-7M-7SP"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="AaM-UP-n2n">
+                                <rect key="frame" x="94" y="314" width="187.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3n-p3-Thm">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWD-c2-N5M">
+                                        <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RhJ-lV-LL6"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="xn6-m4-U9i" firstAttribute="width" secondItem="VKF-pI-crT" secondAttribute="width" multiplier="0.5" id="11h-cb-qaZ"/>
                             <constraint firstItem="laa-mp-4E9" firstAttribute="leading" secondItem="M70-LE-qw2" secondAttribute="leading" id="8WZ-be-w9y"/>
+                            <constraint firstItem="scZ-5f-15d" firstAttribute="width" secondItem="VKF-pI-crT" secondAttribute="width" multiplier="0.5" id="8Xg-hn-vi5"/>
                             <constraint firstItem="M70-LE-qw2" firstAttribute="bottom" secondItem="laa-mp-4E9" secondAttribute="bottom" id="9lq-LT-542"/>
+                            <constraint firstItem="AaM-UP-n2n" firstAttribute="top" secondItem="scZ-5f-15d" secondAttribute="bottom" constant="16" id="F5i-4L-EbG"/>
+                            <constraint firstItem="scZ-5f-15d" firstAttribute="top" secondItem="fj2-xy-urB" secondAttribute="bottom" constant="16" id="N8R-bl-s50"/>
+                            <constraint firstItem="AaM-UP-n2n" firstAttribute="centerX" secondItem="scZ-5f-15d" secondAttribute="centerX" id="Usv-TO-s1M"/>
+                            <constraint firstItem="AaM-UP-n2n" firstAttribute="width" secondItem="VKF-pI-crT" secondAttribute="width" multiplier="0.5" id="WO6-KX-XlT"/>
+                            <constraint firstItem="fj2-xy-urB" firstAttribute="centerX" secondItem="xn6-m4-U9i" secondAttribute="centerX" id="ZB3-3O-PBc"/>
+                            <constraint firstItem="xn6-m4-U9i" firstAttribute="top" secondItem="M70-LE-qw2" secondAttribute="top" constant="132" id="aka-ey-Eqd"/>
+                            <constraint firstItem="fj2-xy-urB" firstAttribute="top" secondItem="xn6-m4-U9i" secondAttribute="bottom" constant="16" id="eAP-nf-LqD"/>
                             <constraint firstItem="laa-mp-4E9" firstAttribute="top" secondItem="M70-LE-qw2" secondAttribute="top" id="fHm-Et-N6k"/>
+                            <constraint firstItem="xn6-m4-U9i" firstAttribute="centerX" secondItem="M70-LE-qw2" secondAttribute="centerX" id="qNO-Uk-I1C"/>
                             <constraint firstItem="M70-LE-qw2" firstAttribute="trailing" secondItem="laa-mp-4E9" secondAttribute="trailing" id="wAV-9I-KhD"/>
+                            <constraint firstItem="scZ-5f-15d" firstAttribute="centerX" secondItem="fj2-xy-urB" secondAttribute="centerX" id="yn4-Bj-22L"/>
+                            <constraint firstItem="fj2-xy-urB" firstAttribute="width" secondItem="VKF-pI-crT" secondAttribute="width" multiplier="0.5" id="z5L-7f-V4d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M70-LE-qw2"/>
                     </view>
                     <navigationItem key="navigationItem" title="TEBRİKLER" id="0kw-1M-F5C"/>
+                    <connections>
+                        <outlet property="player1Label" destination="HRJ-Pa-0aZ" id="KEG-p7-lb7"/>
+                        <outlet property="player2Label" destination="cSB-zX-FcS" id="bkw-cb-dLN"/>
+                        <outlet property="player3Label" destination="S4u-l9-iyj" id="40P-mV-zGT"/>
+                        <outlet property="player4Label" destination="C3n-p3-Thm" id="G8y-5w-ovN"/>
+                        <outlet property="skor1Label" destination="PNV-Ut-h3k" id="W4F-a1-eLG"/>
+                        <outlet property="skor2Label" destination="0zI-e5-8cg" id="WIt-vg-XZu"/>
+                        <outlet property="skor3Label" destination="6hf-8w-ehg" id="Hz1-dz-BXz"/>
+                        <outlet property="skor4Label" destination="yWD-c2-N5M" id="Qjl-Rs-kjE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LBA-00-9qr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
