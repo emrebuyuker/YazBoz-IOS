@@ -54,6 +54,8 @@ class DetailBatakViewController: UIViewController, UITableViewDelegate, UITableV
 	
 	@IBAction func skorAddButtonClick(_ sender: Any) {
 		
+		view.endEditing(true)
+		
 		if (self.skor1.text!.count == 0 || self.skor2.text!.count == 0 || self.skor3.text!.count == 0 || self.skor4.text!.count == 0) {
 			let alert = UIAlertController(title: "Error", message: "Lütfen boş skorları doldurunuz", preferredStyle: .alert)
 			let action = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in

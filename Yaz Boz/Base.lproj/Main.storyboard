@@ -201,7 +201,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WKe-ZU-36V">
                                                 <rect key="frame" x="0.0" y="0.0" width="86" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -218,7 +218,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8br-JF-RVx">
                                                 <rect key="frame" x="4" y="0.0" width="81.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -235,7 +235,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xbZ-C5-5Do">
                                                 <rect key="frame" x="4" y="0.0" width="82" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -252,7 +252,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C1u-Mu-6c7">
                                                 <rect key="frame" x="4" y="0.0" width="85.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -729,6 +729,9 @@
                                     <constraint firstAttribute="height" constant="30" id="XnG-K6-y49"/>
                                 </constraints>
                                 <state key="normal" title="SONUÇ"/>
+                                <connections>
+                                    <segue destination="lGH-gS-rCO" kind="show" id="QiE-k9-28R"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -767,6 +770,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4YH-ka-X5w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1446" y="-1592"/>
+        </scene>
+        <!--TEBRİKLER-->
+        <scene sceneID="7Li-8X-3dd">
+            <objects>
+                <viewController id="lGH-gS-rCO" customClass="Result101PairedViewController" customModule="Yaz_Boz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="49g-uL-wc1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winningIcon" translatesAutoresizingMaskIntoConstraints="NO" id="rmt-eJ-sT2">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1s4-pp-ubp" firstAttribute="bottom" secondItem="rmt-eJ-sT2" secondAttribute="bottom" id="3dB-XO-IUx"/>
+                            <constraint firstItem="rmt-eJ-sT2" firstAttribute="leading" secondItem="1s4-pp-ubp" secondAttribute="leading" id="8N5-jb-3DG"/>
+                            <constraint firstItem="1s4-pp-ubp" firstAttribute="trailing" secondItem="rmt-eJ-sT2" secondAttribute="trailing" id="BUy-sJ-dE7"/>
+                            <constraint firstItem="rmt-eJ-sT2" firstAttribute="top" secondItem="1s4-pp-ubp" secondAttribute="top" id="N91-5s-FcH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1s4-pp-ubp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TEBRİKLER" id="lAg-QJ-b3h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y3w-RJ-Y8O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2342" y="-1593"/>
         </scene>
         <!--OKEY-->
         <scene sceneID="fbh-j7-PAF">
@@ -1060,6 +1090,9 @@
                                     <constraint firstAttribute="height" constant="30" id="cGL-vY-pvJ"/>
                                 </constraints>
                                 <state key="normal" title="SONUÇ"/>
+                                <connections>
+                                    <segue destination="c1D-dZ-G2y" kind="show" id="Pqd-nH-eGa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1102,6 +1135,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oHK-lG-T5U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1446" y="-908"/>
+        </scene>
+        <!--TEBRİKLER-->
+        <scene sceneID="01w-Lh-oCI">
+            <objects>
+                <viewController id="c1D-dZ-G2y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EEx-bK-B1q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winningIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Z95-Qh-9u6">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sSc-Ip-ihw" firstAttribute="bottom" secondItem="Z95-Qh-9u6" secondAttribute="bottom" id="5XN-mJ-5rt"/>
+                            <constraint firstItem="sSc-Ip-ihw" firstAttribute="trailing" secondItem="Z95-Qh-9u6" secondAttribute="trailing" id="U9b-1I-MK7"/>
+                            <constraint firstItem="Z95-Qh-9u6" firstAttribute="top" secondItem="sSc-Ip-ihw" secondAttribute="top" id="bIn-rX-4A0"/>
+                            <constraint firstItem="Z95-Qh-9u6" firstAttribute="leading" secondItem="sSc-Ip-ihw" secondAttribute="leading" id="cpM-TV-rcO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sSc-Ip-ihw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TEBRİKLER" id="UYo-JE-eYt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ygu-l5-jyl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2342" y="-908"/>
         </scene>
         <!--EŞLİ OKEY-->
         <scene sceneID="4BO-SJ-lgL">
@@ -1313,6 +1373,9 @@
                                     <constraint firstAttribute="height" constant="30" id="eMI-bL-V8V"/>
                                 </constraints>
                                 <state key="normal" title="SONUÇ"/>
+                                <connections>
+                                    <segue destination="9aO-cc-GuI" kind="show" id="MTO-SN-J9e"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1351,6 +1414,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w3X-x3-PaF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1446" y="-203"/>
+        </scene>
+        <!--TEBRİKLER-->
+        <scene sceneID="zT5-Pa-Yaa">
+            <objects>
+                <viewController id="9aO-cc-GuI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2sX-6e-mTW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winningIcon" translatesAutoresizingMaskIntoConstraints="NO" id="jyk-hc-dVs">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VR5-bs-uRZ" firstAttribute="bottom" secondItem="jyk-hc-dVs" secondAttribute="bottom" id="7EK-M1-VaH"/>
+                            <constraint firstItem="jyk-hc-dVs" firstAttribute="leading" secondItem="VR5-bs-uRZ" secondAttribute="leading" id="UaH-C7-0aB"/>
+                            <constraint firstItem="jyk-hc-dVs" firstAttribute="top" secondItem="VR5-bs-uRZ" secondAttribute="top" id="UhY-s3-vVG"/>
+                            <constraint firstItem="VR5-bs-uRZ" firstAttribute="trailing" secondItem="jyk-hc-dVs" secondAttribute="trailing" id="YGv-gy-M58"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VR5-bs-uRZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TEBRİKLER" id="Vlg-Op-1dc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sxp-B3-qNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2342" y="-204"/>
         </scene>
         <!--EŞLİ BATAK-->
         <scene sceneID="ERm-5d-m6a">
@@ -1525,6 +1615,9 @@
                                     <constraint firstAttribute="height" constant="30" id="qZH-ZE-1Mn"/>
                                 </constraints>
                                 <state key="normal" title="SONUÇ"/>
+                                <connections>
+                                    <segue destination="IB7-I9-Fbg" kind="show" id="2MX-bI-Yiy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1563,6 +1656,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWj-9q-6Yu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1428" y="1194"/>
+        </scene>
+        <!--TEBRİKLER-->
+        <scene sceneID="ond-O2-lGO">
+            <objects>
+                <viewController id="IB7-I9-Fbg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="scv-qi-kgA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winningIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bmF-ff-Syg">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bmF-ff-Syg" firstAttribute="top" secondItem="BHa-SI-y87" secondAttribute="top" id="7Ga-YQ-Uja"/>
+                            <constraint firstItem="bmF-ff-Syg" firstAttribute="leading" secondItem="BHa-SI-y87" secondAttribute="leading" id="OgC-K3-Y5p"/>
+                            <constraint firstItem="BHa-SI-y87" firstAttribute="bottom" secondItem="bmF-ff-Syg" secondAttribute="bottom" id="fAQ-Wk-JUU"/>
+                            <constraint firstItem="BHa-SI-y87" firstAttribute="trailing" secondItem="bmF-ff-Syg" secondAttribute="trailing" id="uda-nc-atI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BHa-SI-y87"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TEBRİKLER" id="5an-R2-Yih"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FfK-Bj-Khm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2342" y="1193"/>
         </scene>
         <!--BATAK-->
         <scene sceneID="Ip4-iN-BJ2">
@@ -1819,6 +1939,9 @@
                                     <constraint firstAttribute="height" constant="30" id="Hhx-Ib-avn"/>
                                 </constraints>
                                 <state key="normal" title="SONUÇ"/>
+                                <connections>
+                                    <segue destination="PNJ-X6-UHS" kind="show" id="zVT-CJ-tAy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1861,6 +1984,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nF0-na-pDw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1446" y="485"/>
+        </scene>
+        <!--TEBRİKLER-->
+        <scene sceneID="UuO-Nf-oRz">
+            <objects>
+                <viewController id="PNJ-X6-UHS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VKF-pI-crT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winningIcon" translatesAutoresizingMaskIntoConstraints="NO" id="laa-mp-4E9">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="laa-mp-4E9" firstAttribute="leading" secondItem="M70-LE-qw2" secondAttribute="leading" id="8WZ-be-w9y"/>
+                            <constraint firstItem="M70-LE-qw2" firstAttribute="bottom" secondItem="laa-mp-4E9" secondAttribute="bottom" id="9lq-LT-542"/>
+                            <constraint firstItem="laa-mp-4E9" firstAttribute="top" secondItem="M70-LE-qw2" secondAttribute="top" id="fHm-Et-N6k"/>
+                            <constraint firstItem="M70-LE-qw2" firstAttribute="trailing" secondItem="laa-mp-4E9" secondAttribute="trailing" id="wAV-9I-KhD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M70-LE-qw2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TEBRİKLER" id="0kw-1M-F5C"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LBA-00-9qr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2342" y="484"/>
         </scene>
     </scenes>
     <resources>

@@ -41,6 +41,8 @@ class Detail101PairedViewController: UIViewController, UITableViewDelegate, UITa
 	
 	@IBAction func skorAddButtonClick(_ sender: Any) {
 		
+		view.endEditing(true)
+		
 		if (self.skor1.text!.count == 0 || self.skor2.text!.count == 0) {
 			let alert = UIAlertController(title: "Error", message: "Lütfen boş skorları doldurunuz", preferredStyle: .alert)
 			let action = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
@@ -125,21 +127,21 @@ class Detail101PairedViewController: UIViewController, UITableViewDelegate, UITa
 			return
 		}
 		
-		let resultVC = segue.destination as! Result101ViewController
+		let resultVC = segue.destination as! Result101PairedViewController
 		
-		if (self.player1.text?.count == 0) {
-			resultVC.player1 = "Oyuncu1"
-		} else {
-			resultVC.player1 = self.player1.text!
-		}
-		
-		if (self.player2.text?.count == 0) {
-			resultVC.player2 = "Oyuncu2"
-		} else {
-			resultVC.player2 = self.player2.text!
-		}
-		
-		resultVC.skor1 = self.skor1Int
-		resultVC.skor2 = self.skor2Int
+//		if (self.player1.text?.count == 0) {
+//			resultVC.player1 = "Oyuncu1"
+//		} else {
+//			resultVC.player1 = self.player1.text!
+//		}
+//		
+//		if (self.player2.text?.count == 0) {
+//			resultVC.player2 = "Oyuncu2"
+//		} else {
+//			resultVC.player2 = self.player2.text!
+//		}
+//		
+//		resultVC.skor1 = self.skor1Int
+//		resultVC.skor2 = self.skor2Int
 	}
 }

@@ -41,6 +41,8 @@ class DetailOkeyPairedViewController: UIViewController, UITableViewDelegate, UIT
 	
 	@IBAction func skorAddButtonClick(_ sender: Any) {
 		
+		view.endEditing(true)
+		
 		if (self.skor1.text!.count == 0 || self.skor2.text!.count == 0) {
 			let alert = UIAlertController(title: "Error", message: "Lütfen boş skorları doldurunuz", preferredStyle: .alert)
 			let action = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in

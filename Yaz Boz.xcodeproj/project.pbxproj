@@ -16,6 +16,7 @@
 		385DA37F23C4EAB600129F49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385DA37D23C4EAB600129F49 /* LaunchScreen.storyboard */; };
 		385DA3E123C5062300129F49 /* Detail101ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385DA3E023C5062300129F49 /* Detail101ViewController.swift */; };
 		385DA3E623C50F7900129F49 /* FourRowsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385DA3E523C50F7900129F49 /* FourRowsTableViewCell.swift */; };
+		38756DD223CE30F700B14311 /* Result101PairedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38756DD123CE30F700B14311 /* Result101PairedViewController.swift */; };
 		38CE672223C6777700740FB1 /* Detail101PairedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CE672123C6777700740FB1 /* Detail101PairedViewController.swift */; };
 		38CE672423C6790C00740FB1 /* TwoRowsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CE672323C6790C00740FB1 /* TwoRowsTableViewCell.swift */; };
 		38E7CA7823C67F0E00F522FA /* DetailOkeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7CA7723C67F0E00F522FA /* DetailOkeyViewController.swift */; };
@@ -36,6 +37,7 @@
 		385DA38023C4EAB600129F49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		385DA3E023C5062300129F49 /* Detail101ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail101ViewController.swift; sourceTree = "<group>"; };
 		385DA3E523C50F7900129F49 /* FourRowsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourRowsTableViewCell.swift; sourceTree = "<group>"; };
+		38756DD123CE30F700B14311 /* Result101PairedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result101PairedViewController.swift; sourceTree = "<group>"; };
 		38CE672123C6777700740FB1 /* Detail101PairedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail101PairedViewController.swift; sourceTree = "<group>"; };
 		38CE672323C6790C00740FB1 /* TwoRowsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoRowsTableViewCell.swift; sourceTree = "<group>"; };
 		38E7CA7723C67F0E00F522FA /* DetailOkeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOkeyViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				38E7CA7923C67F4600F522FA /* DetailOkeyPairedViewController.swift */,
 				38E7CA7723C67F0E00F522FA /* DetailOkeyViewController.swift */,
 				380D1CD123C666C700CFFD65 /* Result101ViewController.swift */,
+				38756DD123CE30F700B14311 /* Result101PairedViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				385DA3E623C50F7900129F49 /* FourRowsTableViewCell.swift in Sources */,
 				380D1CD223C666C700CFFD65 /* Result101ViewController.swift in Sources */,
 				38CE672423C6790C00740FB1 /* TwoRowsTableViewCell.swift in Sources */,
+				38756DD223CE30F700B14311 /* Result101PairedViewController.swift in Sources */,
 				38E7CA7823C67F0E00F522FA /* DetailOkeyViewController.swift in Sources */,
 				385DA3E123C5062300129F49 /* Detail101ViewController.swift in Sources */,
 				38E7CA7C23C67F8C00F522FA /* DetailBatakViewController.swift in Sources */,
@@ -336,7 +340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = A9ZTFRX9B5;
 				INFOPLIST_FILE = "Yaz Boz/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -345,6 +349,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.buyukeryazilim.Yaz-Boz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,7 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = A9ZTFRX9B5;
 				INFOPLIST_FILE = "Yaz Boz/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -363,6 +368,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.buyukeryazilim.Yaz-Boz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
