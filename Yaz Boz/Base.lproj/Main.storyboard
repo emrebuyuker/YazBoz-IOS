@@ -1139,7 +1139,7 @@
         <!--TEBRİKLER-->
         <scene sceneID="01w-Lh-oCI">
             <objects>
-                <viewController id="c1D-dZ-G2y" sceneMemberID="viewController">
+                <viewController id="c1D-dZ-G2y" customClass="ResultOkeyViewController" customModule="Yaz_Boz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EEx-bK-B1q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1418,7 +1418,7 @@
         <!--TEBRİKLER-->
         <scene sceneID="zT5-Pa-Yaa">
             <objects>
-                <viewController id="9aO-cc-GuI" sceneMemberID="viewController">
+                <viewController id="9aO-cc-GuI" customClass="ResultOkeyPairedViewController" customModule="Yaz_Boz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2sX-6e-mTW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1660,7 +1660,7 @@
         <!--TEBRİKLER-->
         <scene sceneID="ond-O2-lGO">
             <objects>
-                <viewController id="IB7-I9-Fbg" sceneMemberID="viewController">
+                <viewController id="IB7-I9-Fbg" customClass="ResultBatakPairedViewController" customModule="Yaz_Boz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="scv-qi-kgA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1988,7 +1988,7 @@
         <!--TEBRİKLER-->
         <scene sceneID="UuO-Nf-oRz">
             <objects>
-                <viewController id="PNJ-X6-UHS" sceneMemberID="viewController">
+                <viewController id="PNJ-X6-UHS" customClass="ResultBatakViewController" customModule="Yaz_Boz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VKF-pI-crT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

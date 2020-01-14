@@ -17,6 +17,10 @@
 		385DA3E123C5062300129F49 /* Detail101ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385DA3E023C5062300129F49 /* Detail101ViewController.swift */; };
 		385DA3E623C50F7900129F49 /* FourRowsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385DA3E523C50F7900129F49 /* FourRowsTableViewCell.swift */; };
 		38756DD223CE30F700B14311 /* Result101PairedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38756DD123CE30F700B14311 /* Result101PairedViewController.swift */; };
+		38756DD423CE333B00B14311 /* ResultBatakPairedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38756DD323CE333B00B14311 /* ResultBatakPairedViewController.swift */; };
+		38756DD623CE341300B14311 /* ResultBatakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38756DD523CE341300B14311 /* ResultBatakViewController.swift */; };
+		38756DD823CE343E00B14311 /* ResultOkeyPairedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38756DD723CE343E00B14311 /* ResultOkeyPairedViewController.swift */; };
+		38756DDA23CE34A000B14311 /* ResultOkeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38756DD923CE34A000B14311 /* ResultOkeyViewController.swift */; };
 		38CE672223C6777700740FB1 /* Detail101PairedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CE672123C6777700740FB1 /* Detail101PairedViewController.swift */; };
 		38CE672423C6790C00740FB1 /* TwoRowsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CE672323C6790C00740FB1 /* TwoRowsTableViewCell.swift */; };
 		38E7CA7823C67F0E00F522FA /* DetailOkeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7CA7723C67F0E00F522FA /* DetailOkeyViewController.swift */; };
@@ -38,6 +42,10 @@
 		385DA3E023C5062300129F49 /* Detail101ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail101ViewController.swift; sourceTree = "<group>"; };
 		385DA3E523C50F7900129F49 /* FourRowsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourRowsTableViewCell.swift; sourceTree = "<group>"; };
 		38756DD123CE30F700B14311 /* Result101PairedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result101PairedViewController.swift; sourceTree = "<group>"; };
+		38756DD323CE333B00B14311 /* ResultBatakPairedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBatakPairedViewController.swift; sourceTree = "<group>"; };
+		38756DD523CE341300B14311 /* ResultBatakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBatakViewController.swift; sourceTree = "<group>"; };
+		38756DD723CE343E00B14311 /* ResultOkeyPairedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultOkeyPairedViewController.swift; sourceTree = "<group>"; };
+		38756DD923CE34A000B14311 /* ResultOkeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultOkeyViewController.swift; sourceTree = "<group>"; };
 		38CE672123C6777700740FB1 /* Detail101PairedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail101PairedViewController.swift; sourceTree = "<group>"; };
 		38CE672323C6790C00740FB1 /* TwoRowsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoRowsTableViewCell.swift; sourceTree = "<group>"; };
 		38E7CA7723C67F0E00F522FA /* DetailOkeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOkeyViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +108,10 @@
 				38E7CA7723C67F0E00F522FA /* DetailOkeyViewController.swift */,
 				380D1CD123C666C700CFFD65 /* Result101ViewController.swift */,
 				38756DD123CE30F700B14311 /* Result101PairedViewController.swift */,
+				38756DD323CE333B00B14311 /* ResultBatakPairedViewController.swift */,
+				38756DD523CE341300B14311 /* ResultBatakViewController.swift */,
+				38756DD723CE343E00B14311 /* ResultOkeyPairedViewController.swift */,
+				38756DD923CE34A000B14311 /* ResultOkeyViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -191,11 +203,15 @@
 				385DA3E623C50F7900129F49 /* FourRowsTableViewCell.swift in Sources */,
 				380D1CD223C666C700CFFD65 /* Result101ViewController.swift in Sources */,
 				38CE672423C6790C00740FB1 /* TwoRowsTableViewCell.swift in Sources */,
+				38756DDA23CE34A000B14311 /* ResultOkeyViewController.swift in Sources */,
+				38756DD623CE341300B14311 /* ResultBatakViewController.swift in Sources */,
 				38756DD223CE30F700B14311 /* Result101PairedViewController.swift in Sources */,
 				38E7CA7823C67F0E00F522FA /* DetailOkeyViewController.swift in Sources */,
+				38756DD823CE343E00B14311 /* ResultOkeyPairedViewController.swift in Sources */,
 				385DA3E123C5062300129F49 /* Detail101ViewController.swift in Sources */,
 				38E7CA7C23C67F8C00F522FA /* DetailBatakViewController.swift in Sources */,
 				38E7CA7A23C67F4600F522FA /* DetailOkeyPairedViewController.swift in Sources */,
+				38756DD423CE333B00B14311 /* ResultBatakPairedViewController.swift in Sources */,
 				38CE672223C6777700740FB1 /* Detail101PairedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

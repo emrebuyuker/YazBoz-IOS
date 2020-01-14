@@ -168,35 +168,35 @@ class DetailOkeyViewController: UIViewController, UITableViewDelegate, UITableVi
 			return
 		}
 		
-		let resultVC = segue.destination as! Result101ViewController
+		let resultVC = segue.destination as! ResultOkeyViewController
 		
-		if (self.player1.text?.count == 0) {
-			resultVC.player1 = "Oyuncu1"
-		} else {
-			resultVC.player1 = self.player1.text!
-		}
-		
-		if (self.player2.text?.count == 0) {
-			resultVC.player2 = "Oyuncu2"
-		} else {
-			resultVC.player2 = self.player2.text!
-		}
-		
-		if (self.player3.text?.count == 0) {
-			resultVC.player3 = "Oyuncu3"
-		} else {
-			resultVC.player3 = self.player3.text!
-		}
-		
-		if (self.player4.text?.count == 0) {
-			resultVC.player4 = "Oyuncu4"
-		} else {
-			resultVC.player4 = self.player4.text!
-		}
-		
-		resultVC.skor1 = self.skor1Int
-		resultVC.skor2 = self.skor2Int
-		resultVC.skor3 = self.skor3Int
-		resultVC.skor4 = self.skor4Int
+//		if (self.player1.text?.count == 0) {
+//			resultVC.player1 = "Oyuncu1"
+//		} else {
+//			resultVC.player1 = self.player1.text!
+//		}
+//
+//		if (self.player2.text?.count == 0) {
+//			resultVC.player2 = "Oyuncu2"
+//		} else {
+//			resultVC.player2 = self.player2.text!
+//		}
+//
+//		if (self.player3.text?.count == 0) {
+//			resultVC.player3 = "Oyuncu3"
+//		} else {
+//			resultVC.player3 = self.player3.text!
+//		}
+//
+//		if (self.player4.text?.count == 0) {
+//			resultVC.player4 = "Oyuncu4"
+//		} else {
+//			resultVC.player4 = self.player4.text!
+//		}
+//
+//		resultVC.skor1 = self.skor1Int
+//		resultVC.skor2 = self.skor2Int
+//		resultVC.skor3 = self.skor3Int
+//		resultVC.skor4 = self.skor4Int
 	}
 }
