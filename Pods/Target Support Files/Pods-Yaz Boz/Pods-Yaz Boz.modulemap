@@ -1,0 +1,6 @@
+framework module Pods_Yaz_Boz {
+  umbrella header "Pods-Yaz Boz-umbrella.h"
+
+  export *
+  module * { export * }
+}
