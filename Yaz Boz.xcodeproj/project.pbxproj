@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,10 +23,12 @@
 		38756DDA23CE34A000B14311 /* ResultOkeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38756DD923CE34A000B14311 /* ResultOkeyViewController.swift */; };
 		38CE672223C6777700740FB1 /* Detail101PairedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CE672123C6777700740FB1 /* Detail101PairedViewController.swift */; };
 		38CE672423C6790C00740FB1 /* TwoRowsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CE672323C6790C00740FB1 /* TwoRowsTableViewCell.swift */; };
+		38D3A0D023D1AB6C00FE905C /* VersionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D3A0CF23D1AB6C00FE905C /* VersionCheck.swift */; };
 		38E7CA7823C67F0E00F522FA /* DetailOkeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7CA7723C67F0E00F522FA /* DetailOkeyViewController.swift */; };
 		38E7CA7A23C67F4600F522FA /* DetailOkeyPairedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7CA7923C67F4600F522FA /* DetailOkeyPairedViewController.swift */; };
 		38E7CA7C23C67F8C00F522FA /* DetailBatakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7CA7B23C67F8C00F522FA /* DetailBatakViewController.swift */; };
 		38E7CA7E23C67FBC00F522FA /* DetailBatakPairedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7CA7D23C67FBC00F522FA /* DetailBatakPairedViewController.swift */; };
+		8BAE1B5D9BB3031297E9E89B /* Pods_Yaz_Boz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42C2DE6A16B4FECCB171A96 /* Pods_Yaz_Boz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,10 +50,14 @@
 		38756DD923CE34A000B14311 /* ResultOkeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultOkeyViewController.swift; sourceTree = "<group>"; };
 		38CE672123C6777700740FB1 /* Detail101PairedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail101PairedViewController.swift; sourceTree = "<group>"; };
 		38CE672323C6790C00740FB1 /* TwoRowsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoRowsTableViewCell.swift; sourceTree = "<group>"; };
+		38D3A0CF23D1AB6C00FE905C /* VersionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionCheck.swift; sourceTree = "<group>"; };
 		38E7CA7723C67F0E00F522FA /* DetailOkeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOkeyViewController.swift; sourceTree = "<group>"; };
 		38E7CA7923C67F4600F522FA /* DetailOkeyPairedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOkeyPairedViewController.swift; sourceTree = "<group>"; };
 		38E7CA7B23C67F8C00F522FA /* DetailBatakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBatakViewController.swift; sourceTree = "<group>"; };
 		38E7CA7D23C67FBC00F522FA /* DetailBatakPairedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBatakPairedViewController.swift; sourceTree = "<group>"; };
+		A38626E72C3FE826E98C4B68 /* Pods-Yaz Boz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yaz Boz.release.xcconfig"; path = "Target Support Files/Pods-Yaz Boz/Pods-Yaz Boz.release.xcconfig"; sourceTree = "<group>"; };
+		A9CB264BDE3A3D70FFBFC5CC /* Pods-Yaz Boz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yaz Boz.debug.xcconfig"; path = "Target Support Files/Pods-Yaz Boz/Pods-Yaz Boz.debug.xcconfig"; sourceTree = "<group>"; };
+		F42C2DE6A16B4FECCB171A96 /* Pods_Yaz_Boz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yaz_Boz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BAE1B5D9BB3031297E9E89B /* Pods_Yaz_Boz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +77,8 @@
 			children = (
 				385DA37123C4EAAF00129F49 /* Yaz Boz */,
 				385DA37023C4EAAF00129F49 /* Products */,
+				844B943B76B3C059DF87B837 /* Pods */,
+				3A5B92E1A20797E2C387B1C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,14 +93,15 @@
 		385DA37123C4EAAF00129F49 /* Yaz Boz */ = {
 			isa = PBXGroup;
 			children = (
-				385DA3E223C50D4E00129F49 /* Cell */,
-				385DA38D23C4F5C600129F49 /* Screens */,
 				385DA37223C4EAAF00129F49 /* AppDelegate.swift */,
 				385DA37B23C4EAB600129F49 /* Assets.xcassets */,
+				385DA3E223C50D4E00129F49 /* Cell */,
 				385DA38023C4EAB600129F49 /* Info.plist */,
 				385DA37D23C4EAB600129F49 /* LaunchScreen.storyboard */,
 				385DA37823C4EAAF00129F49 /* Main.storyboard */,
 				385DA37423C4EAAF00129F49 /* SceneDelegate.swift */,
+				385DA38D23C4F5C600129F49 /* Screens */,
+				38D3A0CF23D1AB6C00FE905C /* VersionCheck.swift */,
 				385DA37623C4EAAF00129F49 /* ViewController.swift */,
 			);
 			path = "Yaz Boz";
@@ -125,6 +135,23 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		3A5B92E1A20797E2C387B1C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F42C2DE6A16B4FECCB171A96 /* Pods_Yaz_Boz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		844B943B76B3C059DF87B837 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9CB264BDE3A3D70FFBFC5CC /* Pods-Yaz Boz.debug.xcconfig */,
+				A38626E72C3FE826E98C4B68 /* Pods-Yaz Boz.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 385DA38323C4EAB600129F49 /* Build configuration list for PBXNativeTarget "Yaz Boz" */;
 			buildPhases = (
+				C617D97F2C6B3D72F2A659F9 /* [CP] Check Pods Manifest.lock */,
 				385DA36B23C4EAAF00129F49 /* Sources */,
 				385DA36C23C4EAAF00129F49 /* Frameworks */,
 				385DA36D23C4EAAF00129F49 /* Resources */,
+				DC3BECC631A6B7AB81580B1F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +220,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C617D97F2C6B3D72F2A659F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yaz Boz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC3BECC631A6B7AB81580B1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yaz Boz/Pods-Yaz Boz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yaz Boz/Pods-Yaz Boz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yaz Boz/Pods-Yaz Boz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		385DA36B23C4EAAF00129F49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -203,6 +274,7 @@
 				385DA3E623C50F7900129F49 /* FourRowsTableViewCell.swift in Sources */,
 				380D1CD223C666C700CFFD65 /* Result101ViewController.swift in Sources */,
 				38CE672423C6790C00740FB1 /* TwoRowsTableViewCell.swift in Sources */,
+				38D3A0D023D1AB6C00FE905C /* VersionCheck.swift in Sources */,
 				38756DDA23CE34A000B14311 /* ResultOkeyViewController.swift in Sources */,
 				38756DD623CE341300B14311 /* ResultBatakViewController.swift in Sources */,
 				38756DD223CE30F700B14311 /* Result101PairedViewController.swift in Sources */,
@@ -354,6 +426,7 @@
 		};
 		385DA38423C4EAB600129F49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9CB264BDE3A3D70FFBFC5CC /* Pods-Yaz Boz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Emre Buyuker (A9ZTFRX9B5)";
@@ -376,6 +449,7 @@
 		};
 		385DA38523C4EAB600129F49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A38626E72C3FE826E98C4B68 /* Pods-Yaz Boz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Emre Buyuker (A9ZTFRX9B5)";
