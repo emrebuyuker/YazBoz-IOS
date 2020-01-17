@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailOkeyPairedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DetailOkeyPairedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
 	
 	var skor1String: String!
 	var skor2String: String!
@@ -39,9 +39,22 @@ class DetailOkeyPairedViewController: UIViewController, UITableViewDelegate, UIT
 		
 		self.skor1Int = 0
 		self.skor2Int = 0
+		
+		self.skor1.delegate = self
+		self.skor2.delegate = self
 	}
 	
 	@IBAction func skorAddButtonClick(_ sender: Any) {
+		
+		if (self.finishLabel.text!.count <= 0) {
+			let alert = UIAlertController(title: "Error", message: "Lütfen kaçta bitsin alanını doldurunuz", preferredStyle: .alert)
+			let action = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
+				
+			}
+			alert.addAction(action)
+			self.present(alert, animated: true, completion: nil)
+			return
+		}
 		
 		self.skorTotalInt = Int(self.finishLabel.text ?? "0")
 		
@@ -113,6 +126,7 @@ class DetailOkeyPairedViewController: UIViewController, UITableViewDelegate, UIT
 			return cell
 		}
 	}
+	
 	@IBAction func deleteButtonClick(_ sender: Any) {
 		
 		let alert = UIAlertController(title: "Error", message: "Skorları temizlemek istediğinizden emin misiniz ?", preferredStyle: .alert)
@@ -132,10 +146,6 @@ class DetailOkeyPairedViewController: UIViewController, UITableViewDelegate, UIT
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		
-		if ((self.skor1Int! <= 0) || (self.skor2Int! <= 0)) {
-			return
-		}
-		
 		let resultVC = segue.destination as! ResultOkeyPairedViewController
 		
 		if (self.player1.text?.count == 0) {
@@ -152,5 +162,17 @@ class DetailOkeyPairedViewController: UIViewController, UITableViewDelegate, UIT
 		
 		resultVC.skor1 = self.skorTotalInt - self.skor1Int!
 		resultVC.skor2 = self.skorTotalInt - self.skor2Int!
+	}
+	
+	func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+		if (range.location == 0 && range.length == 0) {
+			let allowedCharacters = CharacterSet(charactersIn: "0123456789-")
+			let characterSet = CharacterSet(charactersIn: string)
+			return allowedCharacters.isSuperset(of: characterSet)
+		} else {
+			let allowedCharacters = CharacterSet(charactersIn: "0123456789")
+			let characterSet = CharacterSet(charactersIn: string)
+			return allowedCharacters.isSuperset(of: characterSet)
+		}
 	}
 }
