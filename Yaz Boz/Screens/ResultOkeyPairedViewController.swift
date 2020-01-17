@@ -28,7 +28,16 @@ class ResultOkeyPairedViewController: UIViewController {
 		self.player1Label.text = self.player1
 		self.player2Label.text = self.player2
 		
-		self.skor1Label.text = "\(String(describing: self.skor1!))"
-		self.skor2Label.text = "\(String(describing: self.skor2!))"
+		if (self.skor1 == nil) {
+			self.skor1Label.text = "0"
+		} else {
+			self.skor1Label.text = "\(String(describing: self.skor1!))"
+		}
+		
+		if (self.skor2 == nil) {
+			self.skor2Label.text = "0"
+		} else {
+			self.skor2Label.text = "\(String(describing: self.skor2!))"
+		}
     }
 }

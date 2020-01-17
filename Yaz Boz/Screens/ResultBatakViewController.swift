@@ -38,9 +38,28 @@ class ResultBatakViewController: UIViewController {
 		self.player3Label.text = self.player3
 		self.player4Label.text = self.player4
 		
-		self.skor1Label.text = "\(String(describing: self.skor1!))"
-		self.skor2Label.text = "\(String(describing: self.skor2!))"
-		self.skor3Label.text = "\(String(describing: self.skor3!))"
-		self.skor4Label.text = "\(String(describing: self.skor4!))"
+		if (self.skor1 == nil) {
+			self.skor1Label.text = "0"
+		} else {
+			self.skor1Label.text = "\(String(describing: self.skor1!))"
+		}
+		
+		if (self.skor2 == nil) {
+			self.skor2Label.text = "0"
+		} else {
+			self.skor2Label.text = "\(String(describing: self.skor2!))"
+		}
+		
+		if (self.skor3 == nil) {
+			self.skor3Label.text = "0"
+		} else {
+			self.skor3Label.text = "\(String(describing: self.skor3!))"
+		}
+		
+		if (self.skor4 == nil) {
+			self.skor4Label.text = "0"
+		} else {
+			self.skor4Label.text = "\(String(describing: self.skor4!))"
+		}
     }
 }
