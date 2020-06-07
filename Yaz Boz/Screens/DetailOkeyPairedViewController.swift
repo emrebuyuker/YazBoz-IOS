@@ -22,6 +22,11 @@ class DetailOkeyPairedViewController: UIViewController, UITableViewDelegate, UIT
 	var skor1IntArray = [String]()
 	var skor2IntArray = [String]()
 	
+	var isEdit: Bool = false
+	var clickRow: Int = 0
+	
+	@IBOutlet weak var addButton: UIButton!
+	
 	@IBOutlet weak var player1: UITextField!
 	@IBOutlet weak var player2: UITextField!
 	
@@ -42,9 +47,50 @@ class DetailOkeyPairedViewController: UIViewController, UITableViewDelegate, UIT
 		
 		self.skor1.delegate = self
 		self.skor2.delegate = self
+		
+		self.finishLabel.layer.borderWidth = 2
+		self.finishLabel.layer.cornerRadius = 10
+		self.finishLabel.layer.borderColor = UIColor.black.cgColor
+		
+		self.skor1.layer.borderWidth = 2
+		self.skor2.layer.borderWidth = 2
+		
+		self.skor1.layer.cornerRadius = 10
+		self.skor2.layer.cornerRadius = 10
+		
+		self.skor1.layer.borderColor = UIColor.black.cgColor
+		self.skor2.layer.borderColor = UIColor.black.cgColor
+		
+		self.player1.layer.borderWidth = 2
+		self.player2.layer.borderWidth = 2
+		
+		self.player1.layer.cornerRadius = 10
+		self.player2.layer.cornerRadius = 10
+		
+		self.player1.layer.borderColor = UIColor.black.cgColor
+		self.player2.layer.borderColor = UIColor.black.cgColor
 	}
 	
 	@IBAction func skorAddButtonClick(_ sender: Any) {
+		
+		view.endEditing(true)
+		
+		if (isEdit) {
+			self.isEdit = false
+			self.addButton.setTitle("EKLE", for: .normal)
+			
+			self.skor1IntArray[self.clickRow] = self.skor1.text!
+			self.skor2IntArray[self.clickRow] = self.skor2.text!
+			
+			self.skor1Int = self.skor1Int! + (Int(self.skor1.text!) ?? 0)
+			self.skor2Int = self.skor2Int! + (Int(self.skor2.text!) ?? 0)
+			
+			self.skor1.text = ""
+			self.skor2.text = ""
+			
+			self.tableView.reloadData()
+			return
+		}
 		
 		if (self.finishLabel.text!.count <= 0) {
 			let alert = UIAlertController(title: "Error", message: "Lütfen kaçta bitsin alanını doldurunuz", preferredStyle: .alert)
@@ -57,8 +103,6 @@ class DetailOkeyPairedViewController: UIViewController, UITableViewDelegate, UIT
 		}
 		
 		self.skorTotalInt = Int(self.finishLabel.text ?? "0")
-		
-		view.endEditing(true)
 		
 		if (self.skor1.text!.count == 0 || self.skor2.text!.count == 0) {
 			let alert = UIAlertController(title: "Error", message: "Lütfen boş skorları doldurunuz", preferredStyle: .alert)
@@ -125,6 +169,28 @@ class DetailOkeyPairedViewController: UIViewController, UITableViewDelegate, UIT
 			cell.twoRowsTableViewCellMethod(row1: self.skor1IntArray[indexPath.row], row2: self.skor2IntArray[indexPath.row], index: "\(indexPath.row + 1)")
 			return cell
 		}
+	}
+	
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		
+		if (self.isEdit) {
+			self.skor1Int = self.skor1Int! + (Int(self.skor1.text!) ?? 0)
+			self.skor2Int = self.skor2Int! + (Int(self.skor2.text!) ?? 0)
+		}
+		
+		self.isEdit = true
+		if (indexPath.row == skor1IntArray.count) {
+			return
+		}
+		
+		self.skor1.text = self.skor1IntArray[indexPath.row]
+		self.skor2.text = self.skor2IntArray[indexPath.row]
+		self.addButton.setTitle("DÜZENLE", for: .normal)
+		
+		self.skor1Int = self.skor1Int! - (Int(self.skor1.text!) ?? 0)
+		self.skor2Int = self.skor2Int! - (Int(self.skor2.text!) ?? 0)
+		
+		self.clickRow = indexPath.row
 	}
 	
 	@IBAction func deleteButtonClick(_ sender: Any) {

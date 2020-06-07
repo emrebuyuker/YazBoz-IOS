@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--YAZ BOZ-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Yaz_Boz" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,94 +15,113 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Çay Taze" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5S-vu-kd7">
-                                <rect key="frame" x="97" y="123" width="181" height="57"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteOkey" translatesAutoresizingMaskIntoConstraints="NO" id="hY1-Lh-eM5">
+                                <rect key="frame" x="0.0" y="430" width="375" height="237"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOe-qa-2gW">
-                                <rect key="frame" x="8" y="257" width="150" height="30"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="101"/>
+                                <rect key="frame" x="8" y="204" width="150" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="101">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="button101Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a5r-gD-XsL"/>
                                     <segue destination="23I-ni-6Uk" kind="show" id="DgH-uo-9ok"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4c-Ko-SaY">
-                                <rect key="frame" x="217" y="257" width="150" height="30"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Eşli 101"/>
+                                <rect key="frame" x="217" y="204" width="150" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Eşli 101">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="vyq-GN-zh5" kind="show" id="t4t-6k-G0o"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NC-3Y-Hxe">
-                                <rect key="frame" x="8" y="351" width="150" height="30"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Okey"/>
+                                <rect key="frame" x="8" y="298" width="150" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Okey">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="vZS-yf-WN7" kind="show" id="wTm-6q-q1x"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6U-H7-Kow">
-                                <rect key="frame" x="217" y="351" width="150" height="30"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Eşli Okey"/>
+                                <rect key="frame" x="217" y="298" width="150" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Eşli Okey">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="b8k-12-lRy" kind="show" id="JY8-bf-lcN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3q-Fp-L3r">
-                                <rect key="frame" x="217" y="445" width="150" height="30"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Eşli Batak"/>
+                                <rect key="frame" x="217" y="392" width="150" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Eşli Batak">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="1fA-7O-nBa" kind="show" id="nqp-Rz-4xi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5A-3q-ge9">
-                                <rect key="frame" x="8" y="445" width="150" height="30"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Batak"/>
+                                <rect key="frame" x="8" y="392" width="150" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Batak">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="J7l-Xl-iiy" kind="show" id="MsU-Kw-u0y"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackSign" translatesAutoresizingMaskIntoConstraints="NO" id="xNp-x8-ytZ">
+                                <rect key="frame" x="8" y="84" width="359" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="JJo-di-K5e"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Q6U-H7-Kow" firstAttribute="height" secondItem="9NC-3Y-Hxe" secondAttribute="height" id="5lP-1L-YGt"/>
                             <constraint firstItem="W5A-3q-ge9" firstAttribute="top" secondItem="9NC-3Y-Hxe" secondAttribute="bottom" constant="64" id="63N-Og-7xK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hY1-Lh-eM5" secondAttribute="trailing" id="7wT-Bq-gLQ"/>
                             <constraint firstItem="NOe-qa-2gW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="BQ0-ib-SDk"/>
-                            <constraint firstItem="d5S-vu-kd7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="79" id="C93-lE-jYi"/>
                             <constraint firstItem="X3q-Fp-L3r" firstAttribute="width" secondItem="Q6U-H7-Kow" secondAttribute="width" id="Cdj-DH-BhB"/>
+                            <constraint firstItem="hY1-Lh-eM5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FVk-cd-Ihb"/>
                             <constraint firstItem="v4c-Ko-SaY" firstAttribute="centerY" secondItem="NOe-qa-2gW" secondAttribute="centerY" id="GZC-3I-j56"/>
                             <constraint firstItem="v4c-Ko-SaY" firstAttribute="width" secondItem="NOe-qa-2gW" secondAttribute="width" id="H9H-M0-uaL"/>
                             <constraint firstItem="Q6U-H7-Kow" firstAttribute="width" secondItem="9NC-3Y-Hxe" secondAttribute="width" id="LEJ-j3-cEl"/>
                             <constraint firstItem="v4c-Ko-SaY" firstAttribute="height" secondItem="NOe-qa-2gW" secondAttribute="height" id="N1p-6x-Xrz"/>
                             <constraint firstItem="9NC-3Y-Hxe" firstAttribute="top" secondItem="NOe-qa-2gW" secondAttribute="bottom" constant="64" id="Pdl-BH-R1d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hY1-Lh-eM5" secondAttribute="bottom" id="QZX-f4-WYu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v4c-Ko-SaY" secondAttribute="trailing" constant="8" id="Sv1-hI-6l5"/>
                             <constraint firstItem="9NC-3Y-Hxe" firstAttribute="width" secondItem="NOe-qa-2gW" secondAttribute="width" id="Svs-gJ-MGM"/>
+                            <constraint firstItem="xNp-x8-ytZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Szj-Di-Ohh"/>
+                            <constraint firstItem="NOe-qa-2gW" firstAttribute="top" secondItem="xNp-x8-ytZ" secondAttribute="bottom" constant="40" id="XZ0-qf-YEi"/>
                             <constraint firstItem="9NC-3Y-Hxe" firstAttribute="centerX" secondItem="NOe-qa-2gW" secondAttribute="centerX" id="ZY1-5e-w0b"/>
                             <constraint firstItem="9NC-3Y-Hxe" firstAttribute="height" secondItem="NOe-qa-2gW" secondAttribute="height" id="ceE-UB-Y0O"/>
                             <constraint firstItem="Q6U-H7-Kow" firstAttribute="centerX" secondItem="v4c-Ko-SaY" secondAttribute="centerX" id="cpE-VT-ueH"/>
                             <constraint firstItem="X3q-Fp-L3r" firstAttribute="centerX" secondItem="Q6U-H7-Kow" secondAttribute="centerX" id="d3B-qk-Bh3"/>
                             <constraint firstItem="W5A-3q-ge9" firstAttribute="centerX" secondItem="9NC-3Y-Hxe" secondAttribute="centerX" id="eVR-a6-1V3"/>
+                            <constraint firstItem="xNp-x8-ytZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="fWC-6y-PoJ"/>
                             <constraint firstItem="W5A-3q-ge9" firstAttribute="height" secondItem="9NC-3Y-Hxe" secondAttribute="height" id="hyv-HB-qn5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d5S-vu-kd7" secondAttribute="trailing" constant="97" id="kBW-cX-z3f"/>
-                            <constraint firstItem="d5S-vu-kd7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="kXo-iC-A8Y"/>
                             <constraint firstItem="X3q-Fp-L3r" firstAttribute="height" secondItem="Q6U-H7-Kow" secondAttribute="height" id="mHU-qU-0Za"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xNp-x8-ytZ" secondAttribute="trailing" constant="8" id="mfZ-qn-7Ix"/>
                             <constraint firstItem="X3q-Fp-L3r" firstAttribute="top" secondItem="Q6U-H7-Kow" secondAttribute="bottom" constant="64" id="q2Z-Cs-ea6"/>
                             <constraint firstItem="Q6U-H7-Kow" firstAttribute="top" secondItem="v4c-Ko-SaY" secondAttribute="bottom" constant="64" id="qdQ-pu-NMH"/>
-                            <constraint firstItem="NOe-qa-2gW" firstAttribute="top" secondItem="d5S-vu-kd7" secondAttribute="bottom" constant="77" id="qfT-C7-yar"/>
+                            <constraint firstItem="hY1-Lh-eM5" firstAttribute="top" secondItem="W5A-3q-ge9" secondAttribute="bottom" constant="8" id="wIs-ta-pYr"/>
                             <constraint firstItem="W5A-3q-ge9" firstAttribute="width" secondItem="9NC-3Y-Hxe" secondAttribute="width" id="wKI-Fr-a4G"/>
                             <constraint firstItem="NOe-qa-2gW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="zgp-aS-7Ef"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="A5D-bi-MJY"/>
+                    <navigationItem key="navigationItem" title="YAZ BOZ" id="A5D-bi-MJY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,7 +141,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vF7-em-Aq3">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CNA-cN-GMs">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CNA-cN-GMs">
                                                 <rect key="frame" x="0.0" y="0.0" width="86" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -139,7 +158,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JtR-qB-exX">
                                         <rect key="frame" x="90" y="0.0" width="89.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5um-Y6-Sa6">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5um-Y6-Sa6">
                                                 <rect key="frame" x="4" y="0.0" width="81.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -156,7 +175,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQl-w7-bTG">
                                         <rect key="frame" x="179.5" y="0.0" width="90" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I3x-HN-YHJ">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I3x-HN-YHJ">
                                                 <rect key="frame" x="4" y="0.0" width="82" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -173,7 +192,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Phz-19-xBr">
                                         <rect key="frame" x="269.5" y="0.0" width="89.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 4" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgs-dL-vKf">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 4" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgs-dL-vKf">
                                                 <rect key="frame" x="4" y="0.0" width="85.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -198,7 +217,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9R-IM-5gD">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WKe-ZU-36V">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WKe-ZU-36V">
                                                 <rect key="frame" x="0.0" y="0.0" width="86" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -215,7 +234,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emw-4W-fcw">
                                         <rect key="frame" x="90" y="0.0" width="89.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8br-JF-RVx">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8br-JF-RVx">
                                                 <rect key="frame" x="4" y="0.0" width="81.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -232,7 +251,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XLc-Ka-nQH">
                                         <rect key="frame" x="179.5" y="0.0" width="90" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xbZ-C5-5Do">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xbZ-C5-5Do">
                                                 <rect key="frame" x="4" y="0.0" width="82" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -249,7 +268,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqs-Ge-zvq">
                                         <rect key="frame" x="269.5" y="0.0" width="89.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C1u-Mu-6c7">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C1u-Mu-6c7">
                                                 <rect key="frame" x="4" y="0.0" width="85.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -270,9 +289,9 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8g-RO-j0B">
                                 <rect key="frame" x="8" y="172" width="359" height="30"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="EKLE">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="skorAddButtonClick:" destination="23I-ni-6Uk" eventType="touchUpInside" id="a24-0S-boM"/>
@@ -350,19 +369,23 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUS-C6-lPM">
                                 <rect key="frame" x="32" y="605" width="139.5" height="30"/>
-                                <color key="backgroundColor" red="0.71385616060000001" green="0.7175597548" blue="0.7333362699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="TEMİZLE"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="TEMİZLE">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="deleteButtonClick:" destination="23I-ni-6Uk" eventType="touchUpInside" id="5nW-I5-n2C"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grl-vS-jge">
                                 <rect key="frame" x="203.5" y="605" width="139.5" height="30"/>
-                                <color key="backgroundColor" red="0.71385616060000001" green="0.7175597548" blue="0.7333362699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6DY-2j-oOt"/>
                                 </constraints>
-                                <state key="normal" title="SONUÇ"/>
+                                <state key="normal" title="SONUÇ">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="5HT-lK-2h3" kind="show" identifier="toResult" id="UEH-Q0-pKw"/>
                                 </connections>
@@ -394,6 +417,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="101" id="PmW-Ms-6LH"/>
                     <connections>
+                        <outlet property="addButton" destination="W8g-RO-j0B" id="zzG-zf-odd"/>
                         <outlet property="player1" destination="CNA-cN-GMs" id="Fsg-GG-raM"/>
                         <outlet property="player2" destination="5um-Y6-Sa6" id="EMx-BN-Qz7"/>
                         <outlet property="player3" destination="I3x-HN-YHJ" id="o4P-ir-7XM"/>
@@ -425,13 +449,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZn-IY-HZt">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jj-xW-JRA">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -445,13 +469,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTo-6q-dbo">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fX-QZ-pTj">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -465,13 +489,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKi-vz-30N">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhV-8D-rhF">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -485,13 +509,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVk-cY-avJ">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dY-em-MeT">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -500,6 +524,12 @@
                                     <constraint firstAttribute="height" constant="30" id="Psl-XB-KIR"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackSign" translatesAutoresizingMaskIntoConstraints="NO" id="5Lc-hG-hpN">
+                                <rect key="frame" x="93.5" y="66" width="188" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="yj8-3Y-cZf"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -510,6 +540,7 @@
                             <constraint firstItem="Nha-y7-OWt" firstAttribute="width" secondItem="yD3-3S-xFO" secondAttribute="width" multiplier="0.5" id="JKD-oh-cDz"/>
                             <constraint firstItem="cVE-7P-UFD" firstAttribute="centerX" secondItem="65E-f8-BzX" secondAttribute="centerX" id="Lv4-cS-kPK"/>
                             <constraint firstItem="WNW-1f-w6R" firstAttribute="width" secondItem="yD3-3S-xFO" secondAttribute="width" multiplier="0.5" id="MYF-Pd-RdB"/>
+                            <constraint firstItem="5Lc-hG-hpN" firstAttribute="top" secondItem="65E-f8-BzX" secondAttribute="top" constant="22" id="T0d-wD-sq2"/>
                             <constraint firstItem="Xev-DR-vXv" firstAttribute="centerX" secondItem="65E-f8-BzX" secondAttribute="centerX" id="Yxb-g5-gFc"/>
                             <constraint firstItem="65E-f8-BzX" firstAttribute="leading" secondItem="PHf-8o-rn5" secondAttribute="leading" constant="8" id="cA6-TM-i2O"/>
                             <constraint firstItem="65E-f8-BzX" firstAttribute="bottom" secondItem="PHf-8o-rn5" secondAttribute="bottom" constant="8" id="haS-5G-JC3"/>
@@ -519,6 +550,8 @@
                             <constraint firstItem="WNW-1f-w6R" firstAttribute="top" secondItem="Nha-y7-OWt" secondAttribute="bottom" constant="16" id="mhb-6Z-6i8"/>
                             <constraint firstItem="cVE-7P-UFD" firstAttribute="width" secondItem="yD3-3S-xFO" secondAttribute="width" multiplier="0.5" id="nFv-FR-Fae"/>
                             <constraint firstItem="Nha-y7-OWt" firstAttribute="top" secondItem="65E-f8-BzX" secondAttribute="top" constant="132" id="oMm-Ws-vED"/>
+                            <constraint firstItem="5Lc-hG-hpN" firstAttribute="width" secondItem="PHf-8o-rn5" secondAttribute="width" multiplier="0.480818" id="upH-c4-FZQ"/>
+                            <constraint firstItem="5Lc-hG-hpN" firstAttribute="centerX" secondItem="65E-f8-BzX" secondAttribute="centerX" id="vF2-yf-5cP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="65E-f8-BzX"/>
                     </view>
@@ -570,7 +603,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebT-dz-Let">
                                         <rect key="frame" x="0.0" y="0.0" width="179.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gac-nK-gvx">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gac-nK-gvx">
                                                 <rect key="frame" x="0.0" y="0.0" width="175.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -587,7 +620,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2yp-zL-xOy">
                                         <rect key="frame" x="179.5" y="0.0" width="179.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DSO-gc-BtV">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DSO-gc-BtV">
                                                 <rect key="frame" x="4" y="0.0" width="175.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -612,7 +645,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PXI-IE-tiw">
                                         <rect key="frame" x="0.0" y="0.0" width="179.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fOw-2j-LS7">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fOw-2j-LS7">
                                                 <rect key="frame" x="0.0" y="0.0" width="175.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -629,7 +662,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NhZ-5B-9Zh">
                                         <rect key="frame" x="179.5" y="0.0" width="179.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQU-d1-y80">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQU-d1-y80">
                                                 <rect key="frame" x="4" y="0.0" width="175.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -650,9 +683,9 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3R-Fj-BJ2">
                                 <rect key="frame" x="8" y="172" width="359" height="30"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="EKLE">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="skorAddButtonClick:" destination="vyq-GN-zh5" eventType="touchUpInside" id="oFJ-ZL-Gdh"/>
@@ -716,19 +749,23 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vv-SM-9pc">
                                 <rect key="frame" x="32" y="605" width="139.5" height="30"/>
-                                <color key="backgroundColor" red="0.71385616060000001" green="0.7175597548" blue="0.7333362699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="TEMİZLE"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="TEMİZLE">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="deleteButtonClick:" destination="vyq-GN-zh5" eventType="touchUpInside" id="Sfi-Tt-zjJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfN-Bt-Chv">
                                 <rect key="frame" x="203.5" y="605" width="139.5" height="30"/>
-                                <color key="backgroundColor" red="0.71385616060000001" green="0.7175597548" blue="0.7333362699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="XnG-K6-y49"/>
                                 </constraints>
-                                <state key="normal" title="SONUÇ"/>
+                                <state key="normal" title="SONUÇ">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="lGH-gS-rCO" kind="show" identifier="toResultPaired" id="QiE-k9-28R"/>
                                 </connections>
@@ -760,6 +797,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="EŞLİ 101" id="UzQ-Oe-Cgo"/>
                     <connections>
+                        <outlet property="addButton" destination="C3R-Fj-BJ2" id="Qrn-Qi-5A8"/>
                         <outlet property="player1" destination="gac-nK-gvx" id="nvZ-qj-oI2"/>
                         <outlet property="player2" destination="DSO-gc-BtV" id="EJ4-2A-eSM"/>
                         <outlet property="skor1" destination="fOw-2j-LS7" id="xiE-W0-lFR"/>
@@ -782,18 +820,24 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winningIcon" translatesAutoresizingMaskIntoConstraints="NO" id="rmt-eJ-sT2">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackSign" translatesAutoresizingMaskIntoConstraints="NO" id="Ucy-zK-7In">
+                                <rect key="frame" x="93.5" y="66" width="188" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Udw-Nj-PJJ"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wzW-yD-Ze0">
                                 <rect key="frame" x="94" y="214" width="187.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9d3-dK-jmw">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7M9-vt-ySl">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -807,13 +851,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSV-t4-1da">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hln-96-GHp">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -831,7 +875,10 @@
                             <constraint firstItem="wzW-yD-Ze0" firstAttribute="width" secondItem="49g-uL-wc1" secondAttribute="width" multiplier="0.5" id="9NA-tK-vAd"/>
                             <constraint firstItem="1s4-pp-ubp" firstAttribute="trailing" secondItem="rmt-eJ-sT2" secondAttribute="trailing" id="BUy-sJ-dE7"/>
                             <constraint firstItem="54k-DN-f4q" firstAttribute="top" secondItem="wzW-yD-Ze0" secondAttribute="bottom" constant="16" id="F6Y-Vh-qNL"/>
+                            <constraint firstItem="Ucy-zK-7In" firstAttribute="centerX" secondItem="1s4-pp-ubp" secondAttribute="centerX" id="Itn-DR-0KB"/>
+                            <constraint firstItem="Ucy-zK-7In" firstAttribute="width" secondItem="rmt-eJ-sT2" secondAttribute="width" multiplier="0.501333" id="Jqt-nT-5aJ"/>
                             <constraint firstItem="rmt-eJ-sT2" firstAttribute="top" secondItem="1s4-pp-ubp" secondAttribute="top" id="N91-5s-FcH"/>
+                            <constraint firstItem="Ucy-zK-7In" firstAttribute="top" secondItem="1s4-pp-ubp" secondAttribute="top" constant="22" id="OPE-t5-pPC"/>
                             <constraint firstItem="wzW-yD-Ze0" firstAttribute="top" secondItem="1s4-pp-ubp" secondAttribute="top" constant="170" id="aPt-SF-oLx"/>
                             <constraint firstItem="54k-DN-f4q" firstAttribute="width" secondItem="49g-uL-wc1" secondAttribute="width" multiplier="0.5" id="avk-Vq-wz2"/>
                             <constraint firstItem="wzW-yD-Ze0" firstAttribute="centerX" secondItem="1s4-pp-ubp" secondAttribute="centerX" id="mT7-xN-fHw"/>
@@ -864,7 +911,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ6-ee-Cfk">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GXS-zl-k1s">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GXS-zl-k1s">
                                                 <rect key="frame" x="0.0" y="0.0" width="86" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -881,7 +928,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EN7-j0-IIQ">
                                         <rect key="frame" x="90" y="0.0" width="89.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08e-VK-6pC">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08e-VK-6pC">
                                                 <rect key="frame" x="4" y="0.0" width="81.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -898,7 +945,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="an0-08-RxR">
                                         <rect key="frame" x="179.5" y="0.0" width="90" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qI-0i-dtT">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qI-0i-dtT">
                                                 <rect key="frame" x="4" y="0.0" width="82" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -915,7 +962,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C3d-dK-bYg">
                                         <rect key="frame" x="269.5" y="0.0" width="89.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 4" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UIa-gw-5Kw">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 4" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UIa-gw-5Kw">
                                                 <rect key="frame" x="4" y="0.0" width="85.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -940,7 +987,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ysi-II-eOe">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vcu-wf-7UQ">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vcu-wf-7UQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="86" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -957,7 +1004,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41v-LH-odT">
                                         <rect key="frame" x="90" y="0.0" width="89.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h3P-aF-pPP">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h3P-aF-pPP">
                                                 <rect key="frame" x="4" y="0.0" width="81.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -974,7 +1021,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMU-hU-IQy">
                                         <rect key="frame" x="179.5" y="0.0" width="90" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aev-PI-NDH">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aev-PI-NDH">
                                                 <rect key="frame" x="4" y="0.0" width="82" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -991,7 +1038,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2SW-Jl-OFg">
                                         <rect key="frame" x="269.5" y="0.0" width="89.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5N2-bT-hTG">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5N2-bT-hTG">
                                                 <rect key="frame" x="4" y="0.0" width="85.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -1016,7 +1063,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RoQ-DN-pOF">
                                         <rect key="frame" x="0.0" y="0.0" width="179.5" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kaçta Bitsin" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qea-C4-nIz">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Kaçta Bitsin" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qea-C4-nIz">
                                                 <rect key="frame" x="0.0" y="0.0" width="175.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -1035,9 +1082,9 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqE-LW-fhR">
                                                 <rect key="frame" x="4" y="0.0" width="175.5" height="30"/>
-                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="EKLE">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="skorAddButtonClick:" destination="vZS-yf-WN7" eventType="touchUpInside" id="0O9-yf-hGz"/>
@@ -1129,19 +1176,23 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSa-I5-6Uq">
                                 <rect key="frame" x="32" y="605" width="139.5" height="30"/>
-                                <color key="backgroundColor" red="0.71385616060000001" green="0.7175597548" blue="0.7333362699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="TEMİZLE"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="TEMİZLE">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="deleteButtonClick:" destination="vZS-yf-WN7" eventType="touchUpInside" id="EVD-3F-pSI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5M4-Gh-bkR">
                                 <rect key="frame" x="203.5" y="605" width="139.5" height="30"/>
-                                <color key="backgroundColor" red="0.71385616060000001" green="0.7175597548" blue="0.7333362699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="cGL-vY-pvJ"/>
                                 </constraints>
-                                <state key="normal" title="SONUÇ"/>
+                                <state key="normal" title="SONUÇ">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="c1D-dZ-G2y" kind="show" identifier="toResultOkey" id="Pqd-nH-eGa"/>
                                 </connections>
@@ -1173,6 +1224,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="OKEY" id="jXA-un-INX"/>
                     <connections>
+                        <outlet property="addButton" destination="XqE-LW-fhR" id="dvt-fy-TXm"/>
                         <outlet property="finishLabel" destination="Qea-C4-nIz" id="3tS-vG-qOh"/>
                         <outlet property="player1" destination="GXS-zl-k1s" id="6Zn-li-NhT"/>
                         <outlet property="player2" destination="08e-VK-6pC" id="Imb-8E-P8G"/>
@@ -1200,18 +1252,24 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winningIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Z95-Qh-9u6">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackSign" translatesAutoresizingMaskIntoConstraints="NO" id="T8j-AK-fgj">
+                                <rect key="frame" x="93.5" y="66" width="188" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="rNG-4C-6c1"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FlN-0L-8Mz">
                                 <rect key="frame" x="94" y="176" width="187.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvi-YB-7KW">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRo-Rl-BR1">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1225,13 +1283,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9d-iP-Ot3">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJ3-ZZ-MHo">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1245,13 +1303,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUe-vZ-zyv">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2E-XJ-RX5">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1265,13 +1323,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cA-67-Vc3">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOQ-w4-dj0">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1299,6 +1357,9 @@
                             <constraint firstItem="Z95-Qh-9u6" firstAttribute="leading" secondItem="sSc-Ip-ihw" secondAttribute="leading" id="cpM-TV-rcO"/>
                             <constraint firstItem="XzE-k7-7FT" firstAttribute="top" secondItem="uZx-ve-XKi" secondAttribute="bottom" constant="16" id="geY-HU-Edo"/>
                             <constraint firstItem="2cZ-lA-5op" firstAttribute="width" secondItem="EEx-bK-B1q" secondAttribute="width" multiplier="0.5" id="in4-zW-rkJ"/>
+                            <constraint firstItem="T8j-AK-fgj" firstAttribute="top" secondItem="sSc-Ip-ihw" secondAttribute="top" constant="22" id="pEN-Io-YfU"/>
+                            <constraint firstItem="T8j-AK-fgj" firstAttribute="width" secondItem="Z95-Qh-9u6" secondAttribute="width" multiplier="0.501333" id="pdr-5P-K6P"/>
+                            <constraint firstItem="T8j-AK-fgj" firstAttribute="centerX" secondItem="sSc-Ip-ihw" secondAttribute="centerX" id="w8I-FS-68t"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sSc-Ip-ihw"/>
                     </view>
@@ -1332,7 +1393,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajP-MV-fgu">
                                         <rect key="frame" x="0.0" y="0.0" width="179.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rgt-8P-6k3">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rgt-8P-6k3">
                                                 <rect key="frame" x="0.0" y="0.0" width="175.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1349,7 +1410,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3XB-vn-pxI">
                                         <rect key="frame" x="179.5" y="0.0" width="179.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JSe-fs-9Ed">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JSe-fs-9Ed">
                                                 <rect key="frame" x="4" y="0.0" width="171.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1374,7 +1435,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCx-AU-xB9">
                                         <rect key="frame" x="0.0" y="0.0" width="179.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ZM-rH-m4L">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ZM-rH-m4L">
                                                 <rect key="frame" x="0.0" y="0.0" width="175.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -1391,7 +1452,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4KR-eq-kAz">
                                         <rect key="frame" x="179.5" y="0.0" width="179.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aYf-LS-oDR">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aYf-LS-oDR">
                                                 <rect key="frame" x="4" y="0.0" width="171.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -1416,7 +1477,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Neo-Vl-BmT">
                                         <rect key="frame" x="0.0" y="0.0" width="179.5" height="30"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kaçta Bitsin" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gww-3k-ohY">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Kaçta Bitsin" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gww-3k-ohY">
                                                 <rect key="frame" x="0.0" y="0.0" width="175.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -1435,9 +1496,9 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aim-lx-mih">
                                                 <rect key="frame" x="4" y="0.0" width="175.5" height="30"/>
-                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="EKLE">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="skorAddButtonClick:" destination="b8k-12-lRy" eventType="touchUpInside" id="NGv-af-PWW"/>
@@ -1515,19 +1576,23 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysm-GL-T8o">
                                 <rect key="frame" x="32" y="605" width="139.5" height="30"/>
-                                <color key="backgroundColor" red="0.71385616060000001" green="0.7175597548" blue="0.7333362699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="TEMİZLE"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="TEMİZLE">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="deleteButtonClick:" destination="b8k-12-lRy" eventType="touchUpInside" id="MUf-8W-dFH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Auw-cb-e6V">
                                 <rect key="frame" x="203.5" y="605" width="139.5" height="30"/>
-                                <color key="backgroundColor" red="0.71385616060000001" green="0.7175597548" blue="0.7333362699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="eMI-bL-V8V"/>
                                 </constraints>
-                                <state key="normal" title="SONUÇ"/>
+                                <state key="normal" title="SONUÇ">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="9aO-cc-GuI" kind="show" identifier="toResultOkeyPaired" id="MTO-SN-J9e"/>
                                 </connections>
@@ -1559,6 +1624,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="EŞLİ OKEY" id="OML-rq-oys"/>
                     <connections>
+                        <outlet property="addButton" destination="aim-lx-mih" id="X33-Ik-wpw"/>
                         <outlet property="finishLabel" destination="Gww-3k-ohY" id="GvZ-02-Mj4"/>
                         <outlet property="player1" destination="Rgt-8P-6k3" id="rgb-p2-JaQ"/>
                         <outlet property="player2" destination="JSe-fs-9Ed" id="TVa-et-qKB"/>
@@ -1582,18 +1648,24 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winningIcon" translatesAutoresizingMaskIntoConstraints="NO" id="jyk-hc-dVs">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackSign" translatesAutoresizingMaskIntoConstraints="NO" id="OJO-0q-Kk8">
+                                <rect key="frame" x="93.5" y="66" width="188" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="1m8-a7-HNf"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lju-ka-43e">
                                 <rect key="frame" x="94" y="214" width="187.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HT3-ew-wEe">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2n-Jy-bBC">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1607,13 +1679,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3N8-BQ-Yb5">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28y-hp-bfn">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1628,12 +1700,15 @@
                             <constraint firstItem="pde-2A-d67" firstAttribute="centerX" secondItem="lju-ka-43e" secondAttribute="centerX" id="6Nx-3f-F7o"/>
                             <constraint firstItem="VR5-bs-uRZ" firstAttribute="bottom" secondItem="jyk-hc-dVs" secondAttribute="bottom" id="7EK-M1-VaH"/>
                             <constraint firstItem="pde-2A-d67" firstAttribute="centerX" secondItem="VR5-bs-uRZ" secondAttribute="centerX" id="ILo-ID-Lsx"/>
+                            <constraint firstItem="OJO-0q-Kk8" firstAttribute="width" secondItem="jyk-hc-dVs" secondAttribute="width" multiplier="0.501333" id="Imy-Kr-XWu"/>
                             <constraint firstItem="pde-2A-d67" firstAttribute="top" secondItem="lju-ka-43e" secondAttribute="bottom" constant="16" id="SMo-zo-AvS"/>
                             <constraint firstItem="jyk-hc-dVs" firstAttribute="leading" secondItem="VR5-bs-uRZ" secondAttribute="leading" id="UaH-C7-0aB"/>
                             <constraint firstItem="jyk-hc-dVs" firstAttribute="top" secondItem="VR5-bs-uRZ" secondAttribute="top" id="UhY-s3-vVG"/>
+                            <constraint firstItem="OJO-0q-Kk8" firstAttribute="top" secondItem="VR5-bs-uRZ" secondAttribute="top" constant="22" id="Wl1-jb-BcH"/>
                             <constraint firstItem="VR5-bs-uRZ" firstAttribute="trailing" secondItem="jyk-hc-dVs" secondAttribute="trailing" id="YGv-gy-M58"/>
                             <constraint firstItem="lju-ka-43e" firstAttribute="width" secondItem="2sX-6e-mTW" secondAttribute="width" multiplier="0.5" id="cdb-2V-9Fd"/>
                             <constraint firstItem="pde-2A-d67" firstAttribute="width" secondItem="2sX-6e-mTW" secondAttribute="width" multiplier="0.5" id="eOL-2g-ory"/>
+                            <constraint firstItem="OJO-0q-Kk8" firstAttribute="centerX" secondItem="VR5-bs-uRZ" secondAttribute="centerX" id="fth-IP-zUJ"/>
                             <constraint firstItem="lju-ka-43e" firstAttribute="top" secondItem="VR5-bs-uRZ" secondAttribute="top" constant="170" id="jgK-ZL-x0q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VR5-bs-uRZ"/>
@@ -1664,7 +1739,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QTI-0O-d9Y">
                                         <rect key="frame" x="0.0" y="0.0" width="179.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEg-b5-fIJ">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEg-b5-fIJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="175.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1681,7 +1756,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezL-24-5gS">
                                         <rect key="frame" x="179.5" y="0.0" width="179.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5aG-8K-83j">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5aG-8K-83j">
                                                 <rect key="frame" x="4" y="0.0" width="171.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1706,7 +1781,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qP2-Pd-m5w">
                                         <rect key="frame" x="0.0" y="0.0" width="179.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OTD-Q4-Cxm">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OTD-Q4-Cxm">
                                                 <rect key="frame" x="0.0" y="0.0" width="175.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -1723,7 +1798,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28V-B7-mLd">
                                         <rect key="frame" x="179.5" y="0.0" width="179.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uIc-j8-h4X">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uIc-j8-h4X">
                                                 <rect key="frame" x="4" y="0.0" width="171.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -1744,9 +1819,9 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URh-PC-6O9">
                                 <rect key="frame" x="8" y="172" width="359" height="30"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="EKLE">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="skorAddButtonClick:" destination="1fA-7O-nBa" eventType="touchUpInside" id="PKR-7k-U8k"/>
@@ -1810,19 +1885,23 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICA-Gd-hXH">
                                 <rect key="frame" x="32" y="605" width="139.5" height="30"/>
-                                <color key="backgroundColor" red="0.71385616060000001" green="0.7175597548" blue="0.7333362699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="TEMİZLE"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="TEMİZLE">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="deleteButtonClick:" destination="1fA-7O-nBa" eventType="touchUpInside" id="stb-N6-GDj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejF-Ek-9Tl">
                                 <rect key="frame" x="203.5" y="605" width="139.5" height="30"/>
-                                <color key="backgroundColor" red="0.71385616060000001" green="0.7175597548" blue="0.7333362699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="qZH-ZE-1Mn"/>
                                 </constraints>
-                                <state key="normal" title="SONUÇ"/>
+                                <state key="normal" title="SONUÇ">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="IB7-I9-Fbg" kind="show" identifier="toResultBatakPaired" id="2MX-bI-Yiy"/>
                                 </connections>
@@ -1854,6 +1933,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="EŞLİ BATAK" id="leF-hw-zzb"/>
                     <connections>
+                        <outlet property="addButton" destination="URh-PC-6O9" id="UAM-68-iEu"/>
                         <outlet property="player1" destination="mEg-b5-fIJ" id="zmv-Va-3SL"/>
                         <outlet property="player2" destination="5aG-8K-83j" id="w6I-Oa-ols"/>
                         <outlet property="skor1" destination="OTD-Q4-Cxm" id="J5c-1j-txW"/>
@@ -1876,18 +1956,24 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winningIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bmF-ff-Syg">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackSign" translatesAutoresizingMaskIntoConstraints="NO" id="O0l-Qh-hpp">
+                                <rect key="frame" x="93.5" y="66" width="188" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="slD-e8-ffC"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xHJ-0r-n2Z">
                                 <rect key="frame" x="94" y="214" width="187.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZw-lE-iP9">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgJ-fZ-eTw">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1901,13 +1987,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmU-wm-RCD">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi0-WA-SoM">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1919,8 +2005,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="O0l-Qh-hpp" firstAttribute="centerX" secondItem="BHa-SI-y87" secondAttribute="centerX" id="4o4-WE-e34"/>
+                            <constraint firstItem="O0l-Qh-hpp" firstAttribute="top" secondItem="BHa-SI-y87" secondAttribute="top" constant="22" id="79Y-UZ-Tfb"/>
                             <constraint firstItem="bmF-ff-Syg" firstAttribute="top" secondItem="BHa-SI-y87" secondAttribute="top" id="7Ga-YQ-Uja"/>
                             <constraint firstItem="bmF-ff-Syg" firstAttribute="leading" secondItem="BHa-SI-y87" secondAttribute="leading" id="OgC-K3-Y5p"/>
+                            <constraint firstItem="O0l-Qh-hpp" firstAttribute="width" secondItem="bmF-ff-Syg" secondAttribute="width" multiplier="0.501333" id="Onu-or-29E"/>
                             <constraint firstItem="CMO-64-eyh" firstAttribute="centerX" secondItem="xHJ-0r-n2Z" secondAttribute="centerX" id="RE1-0Z-lVp"/>
                             <constraint firstItem="xHJ-0r-n2Z" firstAttribute="width" secondItem="scv-qi-kgA" secondAttribute="width" multiplier="0.5" id="S1g-0G-Nsm"/>
                             <constraint firstItem="CMO-64-eyh" firstAttribute="top" secondItem="xHJ-0r-n2Z" secondAttribute="bottom" constant="16" id="Wa4-c8-oWO"/>
@@ -1958,7 +2047,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oE7-Xp-shW">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lmR-XL-poW">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lmR-XL-poW">
                                                 <rect key="frame" x="0.0" y="0.0" width="86" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1975,7 +2064,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lga-Qs-kdm">
                                         <rect key="frame" x="90" y="0.0" width="89.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4QN-11-pGa">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4QN-11-pGa">
                                                 <rect key="frame" x="4" y="0.0" width="81.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1992,7 +2081,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EL5-S6-VGp">
                                         <rect key="frame" x="179.5" y="0.0" width="90" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ia5-gW-uI9">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 3" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ia5-gW-uI9">
                                                 <rect key="frame" x="4" y="0.0" width="82" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -2009,7 +2098,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRO-fC-iMx">
                                         <rect key="frame" x="269.5" y="0.0" width="89.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oyuncu 4" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i3h-BS-NvD">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Oyuncu 4" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i3h-BS-NvD">
                                                 <rect key="frame" x="4" y="0.0" width="85.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -2034,7 +2123,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyZ-Ps-28U">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t25-y7-hBR">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t25-y7-hBR">
                                                 <rect key="frame" x="0.0" y="0.0" width="86" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -2051,7 +2140,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUE-0a-o5O">
                                         <rect key="frame" x="90" y="0.0" width="89.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OgA-BH-JDG">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OgA-BH-JDG">
                                                 <rect key="frame" x="4" y="0.0" width="81.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -2068,7 +2157,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnX-SH-eKh">
                                         <rect key="frame" x="179.5" y="0.0" width="90" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gVd-Yz-Ket">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gVd-Yz-Ket">
                                                 <rect key="frame" x="4" y="0.0" width="82" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -2085,7 +2174,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1OA-wH-JgC">
                                         <rect key="frame" x="269.5" y="0.0" width="89.5" height="40"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y8y-Kt-ygd">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Skor" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y8y-Kt-ygd">
                                                 <rect key="frame" x="4" y="0.0" width="85.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -2106,9 +2195,9 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9f-2L-b4H">
                                 <rect key="frame" x="8" y="172" width="359" height="30"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="EKLE">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="skorAddButtonClick:" destination="J7l-Xl-iiy" eventType="touchUpInside" id="Lu8-Aw-Dg3"/>
@@ -2186,19 +2275,23 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nq-02-7Y9">
                                 <rect key="frame" x="32" y="605" width="139.5" height="30"/>
-                                <color key="backgroundColor" red="0.71385616060000001" green="0.7175597548" blue="0.7333362699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="TEMİZLE"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="TEMİZLE">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="deleteButtonClick:" destination="J7l-Xl-iiy" eventType="touchUpInside" id="xU0-GV-Hf1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6I-82-oFC">
                                 <rect key="frame" x="203.5" y="605" width="139.5" height="30"/>
-                                <color key="backgroundColor" red="0.71385616060000001" green="0.7175597548" blue="0.7333362699" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Hhx-Ib-avn"/>
                                 </constraints>
-                                <state key="normal" title="SONUÇ"/>
+                                <state key="normal" title="SONUÇ">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.6588235294" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="PNJ-X6-UHS" kind="show" identifier="toResultBatak" id="zVT-CJ-tAy"/>
                                 </connections>
@@ -2230,6 +2323,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="BATAK" id="qez-Dy-51Z"/>
                     <connections>
+                        <outlet property="addButton" destination="N9f-2L-b4H" id="Vlk-Tc-Evm"/>
                         <outlet property="player1" destination="lmR-XL-poW" id="FFq-Is-AgE"/>
                         <outlet property="player2" destination="4QN-11-pGa" id="6bK-tM-HmJ"/>
                         <outlet property="player3" destination="Ia5-gW-uI9" id="ij3-Su-kJS"/>
@@ -2256,18 +2350,24 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winningIcon" translatesAutoresizingMaskIntoConstraints="NO" id="laa-mp-4E9">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackSign" translatesAutoresizingMaskIntoConstraints="NO" id="ThG-ZU-sIj">
+                                <rect key="frame" x="93.5" y="66" width="188" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="GFU-0U-H8Q"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xn6-m4-U9i">
                                 <rect key="frame" x="94" y="176" width="187.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRJ-Pa-0aZ">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNV-Ut-h3k">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2281,13 +2381,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSB-zX-FcS">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zI-e5-8cg">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2301,13 +2401,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4u-l9-iyj">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hf-8w-ehg">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2321,13 +2421,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oyuncu 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3n-p3-Thm">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWD-c2-N5M">
                                         <rect key="frame" x="93.5" y="0.0" width="94" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2340,13 +2440,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="xn6-m4-U9i" firstAttribute="width" secondItem="VKF-pI-crT" secondAttribute="width" multiplier="0.5" id="11h-cb-qaZ"/>
+                            <constraint firstItem="ThG-ZU-sIj" firstAttribute="centerX" secondItem="M70-LE-qw2" secondAttribute="centerX" id="6sI-Lh-kiH"/>
                             <constraint firstItem="laa-mp-4E9" firstAttribute="leading" secondItem="M70-LE-qw2" secondAttribute="leading" id="8WZ-be-w9y"/>
                             <constraint firstItem="scZ-5f-15d" firstAttribute="width" secondItem="VKF-pI-crT" secondAttribute="width" multiplier="0.5" id="8Xg-hn-vi5"/>
                             <constraint firstItem="M70-LE-qw2" firstAttribute="bottom" secondItem="laa-mp-4E9" secondAttribute="bottom" id="9lq-LT-542"/>
                             <constraint firstItem="AaM-UP-n2n" firstAttribute="top" secondItem="scZ-5f-15d" secondAttribute="bottom" constant="16" id="F5i-4L-EbG"/>
                             <constraint firstItem="scZ-5f-15d" firstAttribute="top" secondItem="fj2-xy-urB" secondAttribute="bottom" constant="16" id="N8R-bl-s50"/>
+                            <constraint firstItem="ThG-ZU-sIj" firstAttribute="top" secondItem="M70-LE-qw2" secondAttribute="top" constant="22" id="Nc7-4x-YVV"/>
                             <constraint firstItem="AaM-UP-n2n" firstAttribute="centerX" secondItem="scZ-5f-15d" secondAttribute="centerX" id="Usv-TO-s1M"/>
                             <constraint firstItem="AaM-UP-n2n" firstAttribute="width" secondItem="VKF-pI-crT" secondAttribute="width" multiplier="0.5" id="WO6-KX-XlT"/>
+                            <constraint firstItem="ThG-ZU-sIj" firstAttribute="width" secondItem="laa-mp-4E9" secondAttribute="width" multiplier="0.501333" id="WQf-Xm-Unn"/>
                             <constraint firstItem="fj2-xy-urB" firstAttribute="centerX" secondItem="xn6-m4-U9i" secondAttribute="centerX" id="ZB3-3O-PBc"/>
                             <constraint firstItem="xn6-m4-U9i" firstAttribute="top" secondItem="M70-LE-qw2" secondAttribute="top" constant="132" id="aka-ey-Eqd"/>
                             <constraint firstItem="fj2-xy-urB" firstAttribute="top" secondItem="xn6-m4-U9i" secondAttribute="bottom" constant="16" id="eAP-nf-LqD"/>
@@ -2376,6 +2479,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="blackSign" width="2458" height="342"/>
+        <image name="whiteOkey" width="400" height="400"/>
         <image name="winningIcon" width="512" height="512"/>
     </resources>
 </document>
