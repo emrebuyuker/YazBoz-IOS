@@ -15,17 +15,7 @@ class Detail101ViewController: UIViewController, UITableViewDelegate, UITableVie
 	var skor3String: String!
 	var skor4String: String!
 	
-	var skor1Int: Int?
-	var skor2Int: Int?
-	var skor3Int: Int?
-	var skor4Int: Int?
-	
 	var row: Int?
-	
-	var skor1IntArray = [String]()
-	var skor2IntArray = [String]()
-	var skor3IntArray = [String]()
-	var skor4IntArray = [String]()
 	
 	var isEdit: Bool = false
 	var clickRow: Int = 0
@@ -50,10 +40,37 @@ class Detail101ViewController: UIViewController, UITableViewDelegate, UITableVie
 		self.tableView.delegate = self
 		self.tableView.dataSource = self
 		
-		self.skor1Int = 0
-		self.skor2Int = 0
-		self.skor3Int = 0
-		self.skor4Int = 0
+		if (Variables.okeyPlayer1Text != nil) {
+			self.player1.text = Variables.okeyPlayer1Text
+		}
+		
+		if (Variables.okeyPlayer2Text != nil) {
+			self.player2.text = Variables.okeyPlayer2Text
+		}
+		
+		if (Variables.okeyPlayer3Text != nil) {
+			self.player3.text = Variables.okeyPlayer3Text
+		}
+		
+		if (Variables.okeyPlayer4Text != nil) {
+			self.player4.text = Variables.okeyPlayer4Text
+		}
+		
+		if (Variables.okeySkor1Int == nil) {
+			Variables.okeySkor1Int = 0
+		}
+		
+		if (Variables.okeySkor2Int == nil) {
+			Variables.okeySkor2Int = 0
+		}
+		
+		if (Variables.okeySkor3Int == nil) {
+			Variables.okeySkor3Int = 0
+		}
+		
+		if (Variables.okeySkor4Int == nil) {
+			Variables.okeySkor4Int = 0
+		}
 		
 		self.skor1.delegate = self
 		self.skor2.delegate = self
@@ -95,19 +112,24 @@ class Detail101ViewController: UIViewController, UITableViewDelegate, UITableVie
 		
 		view.endEditing(true)
 		
+		Variables.okeyPlayer1Text = self.player1.text
+		Variables.okeyPlayer2Text = self.player2.text
+		Variables.okeyPlayer3Text = self.player3.text
+		Variables.okeyPlayer4Text = self.player4.text
+		
 		if (isEdit) {
 			self.isEdit = false
 			self.addButton.setTitle("EKLE", for: .normal)
 			
-			self.skor1IntArray[self.clickRow] = self.skor1.text!
-			self.skor2IntArray[self.clickRow] = self.skor2.text!
-			self.skor3IntArray[self.clickRow] = self.skor3.text!
-			self.skor4IntArray[self.clickRow] = self.skor4.text!
+			Variables.okeySkor1IntArray[self.clickRow] = self.skor1.text!
+			Variables.okeySkor2IntArray[self.clickRow] = self.skor2.text!
+			Variables.okeySkor3IntArray[self.clickRow] = self.skor3.text!
+			Variables.okeySkor4IntArray[self.clickRow] = self.skor4.text!
 			
-			self.skor1Int = self.skor1Int! + (Int(self.skor1.text!) ?? 0)
-			self.skor2Int = self.skor2Int! + (Int(self.skor2.text!) ?? 0)
-			self.skor3Int = self.skor3Int! + (Int(self.skor3.text!) ?? 0)
-			self.skor4Int = self.skor4Int! + (Int(self.skor4.text!) ?? 0)
+			Variables.okeySkor1Int = Variables.okeySkor1Int! + (Int(self.skor1.text!) ?? 0)
+			Variables.okeySkor2Int = Variables.okeySkor2Int! + (Int(self.skor2.text!) ?? 0)
+			Variables.okeySkor3Int = Variables.okeySkor3Int! + (Int(self.skor3.text!) ?? 0)
+			Variables.okeySkor4Int = Variables.okeySkor4Int! + (Int(self.skor4.text!) ?? 0)
 			
 			self.skor1.text = ""
 			self.skor2.text = ""
@@ -129,50 +151,50 @@ class Detail101ViewController: UIViewController, UITableViewDelegate, UITableVie
 		}
 		
 		if ((self.skor1.text) == nil) {
-			self.skor1Int = ((Int((skor1String) ?? "0") ?? 0) + 0)
-			self.skor1String = "\(String(describing: self.skor1Int))"
-			self.skor1IntArray.append("0")
+			Variables.okeySkor1Int = ((Int((skor1String) ?? "0") ?? 0) + 0)
+			self.skor1String = "\(String(describing: Variables.okeySkor1Int))"
+			Variables.okeySkor1IntArray.append("0")
 		}
 		else {
 			if let value = Int(self.skor1.text!) {
-				self.skor1Int = skor1Int! + value
-				self.skor1IntArray.append(self.skor1.text!)
+				Variables.okeySkor1Int = Variables.okeySkor1Int! + value
+				Variables.okeySkor1IntArray.append(self.skor1.text!)
 			}
 		}
 		
 		if ((self.skor2.text) == nil) {
-			self.skor2Int = ((Int((skor2String) ?? "0") ?? 0) + 0)
-			self.skor2String = "\(String(describing: self.skor2Int))"
-			self.skor2IntArray.append("0")
+			Variables.okeySkor2Int = ((Int((skor2String) ?? "0") ?? 0) + 0)
+			self.skor2String = "\(String(describing: Variables.okeySkor2Int))"
+			Variables.okeySkor2IntArray.append("0")
 		}
 		else {
 			if let value = Int(self.skor2.text!) {
-				self.skor2Int = skor2Int! + value
-				self.skor2IntArray.append(self.skor2.text!)
+				Variables.okeySkor2Int = Variables.okeySkor2Int! + value
+				Variables.okeySkor2IntArray.append(self.skor2.text!)
 			}
 		}
 		
 		if ((self.skor3.text) == nil) {
-			self.skor3Int = ((Int((skor3String) ?? "0") ?? 0) + 0)
-			self.skor3String = "\(String(describing: self.skor3Int))"
-			self.skor3IntArray.append("0")
+			Variables.okeySkor3Int = ((Int((skor3String) ?? "0") ?? 0) + 0)
+			self.skor3String = "\(String(describing: Variables.okeySkor3Int))"
+			Variables.okeySkor3IntArray.append("0")
 		}
 		else {
 			if let value = Int(self.skor3.text!) {
-				self.skor3Int = skor3Int! + value
-				self.skor3IntArray.append(self.skor3.text!)
+				Variables.okeySkor3Int = Variables.okeySkor3Int! + value
+				Variables.okeySkor3IntArray.append(self.skor3.text!)
 			}
 		}
 		
 		if ((self.skor4.text) == nil) {
-			self.skor4Int = ((Int((skor4String) ?? "0") ?? 0) + 0)
-			self.skor4String = "\(String(describing: self.skor4Int))"
-			self.skor4IntArray.append("0")
+			Variables.okeySkor4Int = ((Int((skor4String) ?? "0") ?? 0) + 0)
+			self.skor4String = "\(String(describing: Variables.okeySkor4Int))"
+			Variables.okeySkor4IntArray.append("0")
 		}
 		else {
 			if let value = Int(self.skor4.text!) {
-				self.skor4Int = skor4Int! + value
-				self.skor4IntArray.append(self.skor4.text!)
+				Variables.okeySkor4Int = Variables.okeySkor4Int! + value
+				Variables.okeySkor4IntArray.append(self.skor4.text!)
 			}
 		}
 		
@@ -184,24 +206,24 @@ class Detail101ViewController: UIViewController, UITableViewDelegate, UITableVie
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return self.skor1IntArray.count + 1
+		return Variables.okeySkor1IntArray.count + 1
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		
-		if (self.skor1IntArray.count == 0) {
+		if (Variables.okeySkor1IntArray.count == 0) {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FourRowsTableViewCell
 			cell.fourRowsTableViewCellMethod(row1: "0", row2: "0", row3: "0", row4: "0", index: "")
 			return cell
 		}
 			
-		if (indexPath.row == self.skor1IntArray.count) {
+		if (indexPath.row == Variables.okeySkor1IntArray.count) {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FourRowsTableViewCell
-			cell.fourRowsTableViewCellMethod(row1: "\(String(describing: self.skor1Int!))", row2: "\(String(describing: self.skor2Int!))", row3: "\(String(describing: self.skor3Int!))", row4: "\(String(describing: self.skor4Int!))", index: "T")
+			cell.fourRowsTableViewCellMethod(row1: "\(String(describing: Variables.okeySkor1Int!))", row2: "\(String(describing: Variables.okeySkor2Int!))", row3: "\(String(describing: Variables.okeySkor3Int!))", row4: "\(String(describing: Variables.okeySkor4Int!))", index: "T")
 			return cell
 		} else {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FourRowsTableViewCell
-			cell.fourRowsTableViewCellMethod(row1: self.skor1IntArray[indexPath.row], row2: self.skor2IntArray[indexPath.row], row3: self.skor3IntArray[indexPath.row], row4: self.skor4IntArray[indexPath.row], index: "\(indexPath.row + 1)")
+			cell.fourRowsTableViewCellMethod(row1: Variables.okeySkor1IntArray[indexPath.row], row2: Variables.okeySkor2IntArray[indexPath.row], row3: Variables.okeySkor3IntArray[indexPath.row], row4: Variables.okeySkor4IntArray[indexPath.row], index: "\(indexPath.row + 1)")
 			return cell
 		}
 	}
@@ -209,27 +231,27 @@ class Detail101ViewController: UIViewController, UITableViewDelegate, UITableVie
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		
 		if (self.isEdit) {
-			self.skor1Int = self.skor1Int! + (Int(self.skor1.text!) ?? 0)
-			self.skor2Int = self.skor2Int! + (Int(self.skor2.text!) ?? 0)
-			self.skor3Int = self.skor3Int! + (Int(self.skor3.text!) ?? 0)
-			self.skor4Int = self.skor4Int! + (Int(self.skor4.text!) ?? 0)
+			Variables.okeySkor1Int = Variables.okeySkor1Int! + (Int(self.skor1.text!) ?? 0)
+			Variables.okeySkor2Int = Variables.okeySkor2Int! + (Int(self.skor2.text!) ?? 0)
+			Variables.okeySkor3Int = Variables.okeySkor3Int! + (Int(self.skor3.text!) ?? 0)
+			Variables.okeySkor4Int = Variables.okeySkor4Int! + (Int(self.skor4.text!) ?? 0)
 		}
 		
 		self.isEdit = true
-		if (indexPath.row == skor1IntArray.count) {
+		if (indexPath.row == Variables.okeySkor1IntArray.count) {
 			return
 		}
 		
-		self.skor1.text = self.skor1IntArray[indexPath.row]
-		self.skor2.text = self.skor2IntArray[indexPath.row]
-		self.skor3.text = self.skor3IntArray[indexPath.row]
-		self.skor4.text = self.skor4IntArray[indexPath.row]
+		self.skor1.text = Variables.okeySkor1IntArray[indexPath.row]
+		self.skor2.text = Variables.okeySkor2IntArray[indexPath.row]
+		self.skor3.text = Variables.okeySkor3IntArray[indexPath.row]
+		self.skor4.text = Variables.okeySkor4IntArray[indexPath.row]
 		self.addButton.setTitle("DÜZENLE", for: .normal)
 		
-		self.skor1Int = self.skor1Int! - (Int(self.skor1.text!) ?? 0)
-		self.skor2Int = self.skor2Int! - (Int(self.skor2.text!) ?? 0)
-		self.skor3Int = self.skor3Int! - (Int(self.skor3.text!) ?? 0)
-		self.skor4Int = self.skor4Int! - (Int(self.skor4.text!) ?? 0)
+		Variables.okeySkor1Int = Variables.okeySkor1Int! - (Int(self.skor1.text!) ?? 0)
+		Variables.okeySkor2Int = Variables.okeySkor2Int! - (Int(self.skor2.text!) ?? 0)
+		Variables.okeySkor3Int = Variables.okeySkor3Int! - (Int(self.skor3.text!) ?? 0)
+		Variables.okeySkor4Int = Variables.okeySkor4Int! - (Int(self.skor4.text!) ?? 0)
 		
 		self.clickRow = indexPath.row
 	}
@@ -238,10 +260,14 @@ class Detail101ViewController: UIViewController, UITableViewDelegate, UITableVie
 		
 		let alert = UIAlertController(title: "Error", message: "Skorları temizlemek istediğinizden emin misiniz ?", preferredStyle: .alert)
 		let actionOk = UIAlertAction(title: "EVET", style: .default) { (action:UIAlertAction) in
-			self.skor1IntArray.removeAll()
-			self.skor2IntArray.removeAll()
-			self.skor3IntArray.removeAll()
-			self.skor4IntArray.removeAll()
+			Variables.okeySkor1IntArray.removeAll()
+			Variables.okeySkor2IntArray.removeAll()
+			Variables.okeySkor3IntArray.removeAll()
+			Variables.okeySkor4IntArray.removeAll()
+			Variables.okeyPlayer1Text = ""
+			Variables.okeyPlayer2Text = ""
+			Variables.okeyPlayer3Text = ""
+			Variables.okeyPlayer4Text = ""
 			self.tableView.reloadData()
 		}
 		
@@ -260,31 +286,31 @@ class Detail101ViewController: UIViewController, UITableViewDelegate, UITableVie
 		if (self.player1.text?.count == 0) {
 			resultVC.player1 = "Oyuncu1"
 		} else {
-			resultVC.player1 = self.player1.text!
+			resultVC.player1 = Variables.okeyPlayer1Text!
 		}
 		
 		if (self.player2.text?.count == 0) {
 			resultVC.player2 = "Oyuncu2"
 		} else {
-			resultVC.player2 = self.player2.text!
+			resultVC.player2 = Variables.okeyPlayer2Text!
 		}
 		
 		if (self.player3.text?.count == 0) {
 			resultVC.player3 = "Oyuncu3"
 		} else {
-			resultVC.player3 = self.player3.text!
+			resultVC.player3 = Variables.okeyPlayer3Text!
 		}
 		
 		if (self.player4.text?.count == 0) {
 			resultVC.player4 = "Oyuncu4"
 		} else {
-			resultVC.player4 = self.player4.text!
+			resultVC.player4 = Variables.okeyPlayer4Text!
 		}
 		
-		resultVC.skor1 = self.skor1Int
-		resultVC.skor2 = self.skor2Int
-		resultVC.skor3 = self.skor3Int
-		resultVC.skor4 = self.skor4Int
+		resultVC.skor1 = Variables.okeySkor1Int
+		resultVC.skor2 = Variables.okeySkor2Int
+		resultVC.skor3 = Variables.okeySkor3Int
+		resultVC.skor4 = Variables.okeySkor4Int
 	}
 	
 	func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {

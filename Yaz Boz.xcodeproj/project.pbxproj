@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		380D1CD223C666C700CFFD65 /* Result101ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380D1CD123C666C700CFFD65 /* Result101ViewController.swift */; };
+		385A186724A126F200816333 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A186624A126F200816333 /* HomeViewController.swift */; };
+		385A186924A12BC300816333 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A186824A12BC300816333 /* MenuViewController.swift */; };
+		385A186B24A1376900816333 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A186A24A1376900816333 /* GalleryViewController.swift */; };
+		385A186D24A13A7A00816333 /* GalleryViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A186C24A13A7A00816333 /* GalleryViewControllerCell.swift */; };
+		385A186F24A13DB500816333 /* GalleryDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 385A186E24A13DB500816333 /* GalleryDetailViewController.xib */; };
+		385A187124A13DF900816333 /* GalleryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A187024A13DF900816333 /* GalleryDetailViewController.swift */; };
+		385A187424A14B3C00816333 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A187324A14B3C00816333 /* Variables.swift */; };
 		385DA37323C4EAAF00129F49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385DA37223C4EAAF00129F49 /* AppDelegate.swift */; };
 		385DA37523C4EAAF00129F49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385DA37423C4EAAF00129F49 /* SceneDelegate.swift */; };
 		385DA37723C4EAAF00129F49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385DA37623C4EAAF00129F49 /* ViewController.swift */; };
@@ -33,7 +40,14 @@
 
 /* Begin PBXFileReference section */
 		380D1CD123C666C700CFFD65 /* Result101ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result101ViewController.swift; sourceTree = "<group>"; };
-		385DA36F23C4EAAF00129F49 /* Caytaze 101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caytaze 101.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		385A186624A126F200816333 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		385A186824A12BC300816333 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		385A186A24A1376900816333 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		385A186C24A13A7A00816333 /* GalleryViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewControllerCell.swift; sourceTree = "<group>"; };
+		385A186E24A13DB500816333 /* GalleryDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryDetailViewController.xib; sourceTree = "<group>"; };
+		385A187024A13DF900816333 /* GalleryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryDetailViewController.swift; sourceTree = "<group>"; };
+		385A187324A14B3C00816333 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		385DA36F23C4EAAF00129F49 /* Kupa Kafe101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kupa Kafe101.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		385DA37223C4EAAF00129F49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		385DA37423C4EAAF00129F49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		385DA37623C4EAAF00129F49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		385A187224A14B1A00816333 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				385A187324A14B3C00816333 /* Variables.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		385DA36623C4EAAF00129F49 = {
 			isa = PBXGroup;
 			children = (
@@ -85,7 +107,7 @@
 		385DA37023C4EAAF00129F49 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				385DA36F23C4EAAF00129F49 /* Caytaze 101.app */,
+				385DA36F23C4EAAF00129F49 /* Kupa Kafe101.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +115,7 @@
 		385DA37123C4EAAF00129F49 /* Yaz Boz */ = {
 			isa = PBXGroup;
 			children = (
+				385A187224A14B1A00816333 /* Utils */,
 				385DA37223C4EAAF00129F49 /* AppDelegate.swift */,
 				385DA37B23C4EAB600129F49 /* Assets.xcassets */,
 				385DA3E223C50D4E00129F49 /* Cell */,
@@ -122,6 +145,12 @@
 				38756DD523CE341300B14311 /* ResultBatakViewController.swift */,
 				38756DD723CE343E00B14311 /* ResultOkeyPairedViewController.swift */,
 				38756DD923CE34A000B14311 /* ResultOkeyViewController.swift */,
+				385A186624A126F200816333 /* HomeViewController.swift */,
+				385A186824A12BC300816333 /* MenuViewController.swift */,
+				385A186A24A1376900816333 /* GalleryViewController.swift */,
+				385A186C24A13A7A00816333 /* GalleryViewControllerCell.swift */,
+				385A186E24A13DB500816333 /* GalleryDetailViewController.xib */,
+				385A187024A13DF900816333 /* GalleryDetailViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -171,7 +200,7 @@
 			);
 			name = "Yaz Boz";
 			productName = "Yaz Boz";
-			productReference = 385DA36F23C4EAAF00129F49 /* Caytaze 101.app */;
+			productReference = 385DA36F23C4EAAF00129F49 /* Kupa Kafe101.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -214,6 +243,7 @@
 			files = (
 				385DA37F23C4EAB600129F49 /* LaunchScreen.storyboard in Resources */,
 				385DA37C23C4EAB600129F49 /* Assets.xcassets in Resources */,
+				385A186F24A13DB500816333 /* GalleryDetailViewController.xib in Resources */,
 				385DA37A23C4EAAF00129F49 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,17 +299,23 @@
 			files = (
 				385DA37723C4EAAF00129F49 /* ViewController.swift in Sources */,
 				385DA37323C4EAAF00129F49 /* AppDelegate.swift in Sources */,
+				385A186724A126F200816333 /* HomeViewController.swift in Sources */,
+				385A187424A14B3C00816333 /* Variables.swift in Sources */,
 				38E7CA7E23C67FBC00F522FA /* DetailBatakPairedViewController.swift in Sources */,
 				385DA37523C4EAAF00129F49 /* SceneDelegate.swift in Sources */,
 				385DA3E623C50F7900129F49 /* FourRowsTableViewCell.swift in Sources */,
+				385A187124A13DF900816333 /* GalleryDetailViewController.swift in Sources */,
 				380D1CD223C666C700CFFD65 /* Result101ViewController.swift in Sources */,
 				38CE672423C6790C00740FB1 /* TwoRowsTableViewCell.swift in Sources */,
 				38D3A0D023D1AB6C00FE905C /* VersionCheck.swift in Sources */,
 				38756DDA23CE34A000B14311 /* ResultOkeyViewController.swift in Sources */,
 				38756DD623CE341300B14311 /* ResultBatakViewController.swift in Sources */,
+				385A186D24A13A7A00816333 /* GalleryViewControllerCell.swift in Sources */,
+				385A186924A12BC300816333 /* MenuViewController.swift in Sources */,
 				38756DD223CE30F700B14311 /* Result101PairedViewController.swift in Sources */,
 				38E7CA7823C67F0E00F522FA /* DetailOkeyViewController.swift in Sources */,
 				38756DD823CE343E00B14311 /* ResultOkeyPairedViewController.swift in Sources */,
+				385A186B24A1376900816333 /* GalleryViewController.swift in Sources */,
 				385DA3E123C5062300129F49 /* Detail101ViewController.swift in Sources */,
 				38E7CA7C23C67F8C00F522FA /* DetailBatakViewController.swift in Sources */,
 				38E7CA7A23C67F4600F522FA /* DetailOkeyPairedViewController.swift in Sources */,
@@ -431,16 +467,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Emre Buyuker (A9ZTFRX9B5)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = A9ZTFRX9B5;
 				INFOPLIST_FILE = "Yaz Boz/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.buyukeryazilim.Yaz-Boz";
-				PRODUCT_NAME = "Caytaze 101";
+				PRODUCT_NAME = "Kupa Kafe101";
 				PROVISIONING_PROFILE_SPECIFIER = "Yaz Boz App Store";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,16 +490,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Emre Buyuker (A9ZTFRX9B5)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = A9ZTFRX9B5;
 				INFOPLIST_FILE = "Yaz Boz/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.buyukeryazilim.Yaz-Boz";
-				PRODUCT_NAME = "Caytaze 101";
+				PRODUCT_NAME = "Kupa Kafe101";
 				PROVISIONING_PROFILE_SPECIFIER = "Yaz Boz App Store";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
