@@ -13,13 +13,7 @@ class Detail101PairedViewController: UIViewController, UITableViewDelegate, UITa
 	var skor1String: String!
 	var skor2String: String!
 	
-	var skor1Int: Int?
-	var skor2Int: Int?
-	
 	var row: Int?
-	
-	var skor1IntArray = [String]()
-	var skor2IntArray = [String]()
 	
 	var isEdit: Bool = false
 	var clickRow: Int = 0
@@ -40,8 +34,21 @@ class Detail101PairedViewController: UIViewController, UITableViewDelegate, UITa
 		self.tableView.delegate = self
 		self.tableView.dataSource = self
 		
-		self.skor1Int = 0
-		self.skor2Int = 0
+		if (Variables.pairedOkey101Player1Text != nil) {
+			self.player1.text = Variables.pairedOkey101Player1Text
+		}
+		
+		if (Variables.pairedOkey101Player2Text != nil) {
+			self.player2.text = Variables.pairedOkey101Player2Text
+		}
+		
+		if (Variables.pairedOkey101Skor1Int == nil) {
+			Variables.pairedOkey101Skor1Int = 0
+		}
+		
+		if (Variables.pairedOkey101Skor2Int == nil) {
+			Variables.pairedOkey101Skor2Int = 0
+		}
 		
 		self.skor1.delegate = self
 		self.skor2.delegate = self
@@ -73,11 +80,11 @@ class Detail101PairedViewController: UIViewController, UITableViewDelegate, UITa
 			self.isEdit = false
 			self.addButton.setTitle("EKLE", for: .normal)
 			
-			self.skor1IntArray[self.clickRow] = self.skor1.text!
-			self.skor2IntArray[self.clickRow] = self.skor2.text!
+			Variables.pairedOkey101Skor1IntArray[self.clickRow] = self.skor1.text!
+			Variables.pairedOkey101Skor2IntArray[self.clickRow] = self.skor2.text!
 			
-			self.skor1Int = self.skor1Int! + (Int(self.skor1.text!) ?? 0)
-			self.skor2Int = self.skor2Int! + (Int(self.skor2.text!) ?? 0)
+			Variables.pairedOkey101Skor1Int = Variables.pairedOkey101Skor1Int! + (Int(self.skor1.text!) ?? 0)
+			Variables.pairedOkey101Skor2Int = Variables.pairedOkey101Skor2Int! + (Int(self.skor2.text!) ?? 0)
 			
 			self.skor1.text = ""
 			self.skor2.text = ""
@@ -97,26 +104,26 @@ class Detail101PairedViewController: UIViewController, UITableViewDelegate, UITa
 		}
 		
 		if ((self.skor1.text) == nil) {
-			self.skor1Int = ((Int((skor1String) ?? "0") ?? 0) + 0)
-			self.skor1String = "\(String(describing: self.skor1Int))"
-			self.skor1IntArray.append("0")
+			Variables.pairedOkey101Skor1Int = ((Int((skor1String) ?? "0") ?? 0) + 0)
+			self.skor1String = "\(String(describing: Variables.pairedOkey101Skor1Int))"
+			Variables.pairedOkey101Skor1IntArray.append("0")
 		}
 		else {
 			if let value = Int(self.skor1.text!) {
-				self.skor1Int = skor1Int! + value
-				self.skor1IntArray.append(self.skor1.text!)
+				Variables.pairedOkey101Skor1Int = Variables.pairedOkey101Skor1Int! + value
+				Variables.pairedOkey101Skor1IntArray.append(self.skor1.text!)
 			}
 		}
 		
 		if ((self.skor2.text) == nil) {
-			self.skor2Int = ((Int((skor2String) ?? "0") ?? 0) + 0)
-			self.skor2String = "\(String(describing: self.skor2Int))"
-			self.skor2IntArray.append("0")
+			Variables.pairedOkey101Skor2Int = ((Int((skor2String) ?? "0") ?? 0) + 0)
+			self.skor2String = "\(String(describing: Variables.pairedOkey101Skor2Int))"
+			Variables.pairedOkey101Skor2IntArray.append("0")
 		}
 		else {
 			if let value = Int(self.skor2.text!) {
-				self.skor2Int = skor2Int! + value
-				self.skor2IntArray.append(self.skor2.text!)
+				Variables.pairedOkey101Skor2Int = Variables.pairedOkey101Skor2Int! + value
+				Variables.pairedOkey101Skor2IntArray.append(self.skor2.text!)
 			}
 		}
 		
@@ -126,24 +133,24 @@ class Detail101PairedViewController: UIViewController, UITableViewDelegate, UITa
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return self.skor1IntArray.count + 1
+		return Variables.pairedOkey101Skor1IntArray.count + 1
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		
-		if (self.skor1IntArray.count == 0) {
+		if (Variables.pairedOkey101Skor1IntArray.count == 0) {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TwoRowsTableViewCell
 			cell.twoRowsTableViewCellMethod(row1: "0", row2: "0", index: "")
 			return cell
 		}
 			
-		if (indexPath.row == self.skor1IntArray.count) {
+		if (indexPath.row == Variables.pairedOkey101Skor1IntArray.count) {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TwoRowsTableViewCell
-			cell.twoRowsTableViewCellMethod(row1: "\(String(describing: self.skor1Int!))", row2: "\(String(describing: self.skor2Int!))", index: "T")
+			cell.twoRowsTableViewCellMethod(row1: "\(String(describing: Variables.pairedOkey101Skor1Int!))", row2: "\(String(describing: Variables.pairedOkey101Skor2Int!))", index: "T")
 			return cell
 		} else {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TwoRowsTableViewCell
-			cell.twoRowsTableViewCellMethod(row1: self.skor1IntArray[indexPath.row], row2: self.skor2IntArray[indexPath.row], index: "\(indexPath.row + 1)")
+			cell.twoRowsTableViewCellMethod(row1: Variables.pairedOkey101Skor1IntArray[indexPath.row], row2: Variables.pairedOkey101Skor2IntArray[indexPath.row], index: "\(indexPath.row + 1)")
 			return cell
 		}
 	}
@@ -151,21 +158,21 @@ class Detail101PairedViewController: UIViewController, UITableViewDelegate, UITa
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		
 		if (self.isEdit) {
-			self.skor1Int = self.skor1Int! + (Int(self.skor1.text!) ?? 0)
-			self.skor2Int = self.skor2Int! + (Int(self.skor2.text!) ?? 0)
+			Variables.pairedOkey101Skor1Int = Variables.pairedOkey101Skor1Int! + (Int(self.skor1.text!) ?? 0)
+			Variables.pairedOkey101Skor2Int = Variables.pairedOkey101Skor2Int! + (Int(self.skor2.text!) ?? 0)
 		}
 		
 		self.isEdit = true
-		if (indexPath.row == skor1IntArray.count) {
+		if (indexPath.row == Variables.pairedOkey101Skor1IntArray.count) {
 			return
 		}
 		
-		self.skor1.text = self.skor1IntArray[indexPath.row]
-		self.skor2.text = self.skor2IntArray[indexPath.row]
+		self.skor1.text = Variables.pairedOkey101Skor1IntArray[indexPath.row]
+		self.skor2.text = Variables.pairedOkey101Skor2IntArray[indexPath.row]
 		self.addButton.setTitle("DÜZENLE", for: .normal)
 		
-		self.skor1Int = self.skor1Int! - (Int(self.skor1.text!) ?? 0)
-		self.skor2Int = self.skor2Int! - (Int(self.skor2.text!) ?? 0)
+		Variables.pairedOkey101Skor1Int = Variables.pairedOkey101Skor1Int! - (Int(self.skor1.text!) ?? 0)
+		Variables.pairedOkey101Skor2Int = Variables.pairedOkey101Skor2Int! - (Int(self.skor2.text!) ?? 0)
 		
 		self.clickRow = indexPath.row
 	}
@@ -174,8 +181,10 @@ class Detail101PairedViewController: UIViewController, UITableViewDelegate, UITa
 		
 		let alert = UIAlertController(title: "Error", message: "Skorları temizlemek istediğinizden emin misiniz ?", preferredStyle: .alert)
 		let actionOk = UIAlertAction(title: "EVET", style: .default) { (action:UIAlertAction) in
-			self.skor1IntArray.removeAll()
-			self.skor2IntArray.removeAll()
+			Variables.pairedOkey101Skor1IntArray.removeAll()
+			Variables.pairedOkey101Skor2IntArray.removeAll()
+			Variables.pairedOkey101Player1Text = ""
+			Variables.pairedOkey101Player2Text = ""
 			self.tableView.reloadData()
 		}
 		
@@ -203,8 +212,8 @@ class Detail101PairedViewController: UIViewController, UITableViewDelegate, UITa
 			resultVC.player2 = self.player2.text!
 		}
 		
-		resultVC.skor1 = self.skor1Int
-		resultVC.skor2 = self.skor2Int
+		resultVC.skor1 = Variables.pairedOkey101Skor1Int
+		resultVC.skor2 = Variables.pairedOkey101Skor2Int
 	}
 	
 	func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {

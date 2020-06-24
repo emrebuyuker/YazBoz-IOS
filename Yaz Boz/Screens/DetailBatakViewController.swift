@@ -15,11 +15,6 @@ class DetailBatakViewController: UIViewController, UITableViewDelegate, UITableV
 	var skor3String: String!
 	var skor4String: String!
 	
-	var skor1Int: Int?
-	var skor2Int: Int?
-	var skor3Int: Int?
-	var skor4Int: Int?
-	
 	var row: Int?
 	
 	var skor1IntArray = [String]()
@@ -50,10 +45,37 @@ class DetailBatakViewController: UIViewController, UITableViewDelegate, UITableV
 		self.tableView.delegate = self
 		self.tableView.dataSource = self
 		
-		self.skor1Int = 0
-		self.skor2Int = 0
-		self.skor3Int = 0
-		self.skor4Int = 0
+		if (Variables.batakPlayer1Text != nil) {
+			self.player1.text = Variables.batakPlayer1Text
+		}
+		
+		if (Variables.batakPlayer2Text != nil) {
+			self.player2.text = Variables.batakPlayer2Text
+		}
+		
+		if (Variables.batakPlayer3Text != nil) {
+			self.player3.text = Variables.batakPlayer3Text
+		}
+		
+		if (Variables.batakPlayer4Text != nil) {
+			self.player4.text = Variables.batakPlayer4Text
+		}
+		
+		if (Variables.batakSkor1Int == nil) {
+			Variables.batakSkor1Int = 0
+		}
+		
+		if (Variables.batakSkor2Int == nil) {
+			Variables.batakSkor2Int = 0
+		}
+		
+		if (Variables.batakSkor3Int == nil) {
+			Variables.batakSkor3Int = 0
+		}
+		
+		if (Variables.batakSkor4Int == nil) {
+			Variables.batakSkor4Int = 0
+		}
 		
 		self.skor1.delegate = self
 		self.skor2.delegate = self
@@ -99,15 +121,15 @@ class DetailBatakViewController: UIViewController, UITableViewDelegate, UITableV
 			self.isEdit = false
 			self.addButton.setTitle("EKLE", for: .normal)
 			
-			self.skor1IntArray[self.clickRow] = self.skor1.text!
-			self.skor2IntArray[self.clickRow] = self.skor2.text!
-			self.skor3IntArray[self.clickRow] = self.skor3.text!
-			self.skor4IntArray[self.clickRow] = self.skor4.text!
+			Variables.batakSkor1IntArray[self.clickRow] = self.skor1.text!
+			Variables.batakSkor2IntArray[self.clickRow] = self.skor2.text!
+			Variables.batakSkor3IntArray[self.clickRow] = self.skor3.text!
+			Variables.batakSkor4IntArray[self.clickRow] = self.skor4.text!
 			
-			self.skor1Int = self.skor1Int! + (Int(self.skor1.text!) ?? 0)
-			self.skor2Int = self.skor2Int! + (Int(self.skor2.text!) ?? 0)
-			self.skor3Int = self.skor3Int! + (Int(self.skor3.text!) ?? 0)
-			self.skor4Int = self.skor4Int! + (Int(self.skor4.text!) ?? 0)
+			Variables.batakSkor1Int = Variables.batakSkor1Int! + (Int(self.skor1.text!) ?? 0)
+			Variables.batakSkor2Int = Variables.batakSkor2Int! + (Int(self.skor2.text!) ?? 0)
+			Variables.batakSkor3Int = Variables.batakSkor3Int! + (Int(self.skor3.text!) ?? 0)
+			Variables.batakSkor4Int = Variables.batakSkor4Int! + (Int(self.skor4.text!) ?? 0)
 			
 			self.skor1.text = ""
 			self.skor2.text = ""
@@ -129,50 +151,50 @@ class DetailBatakViewController: UIViewController, UITableViewDelegate, UITableV
 		}
 		
 		if ((self.skor1.text) == nil) {
-			self.skor1Int = ((Int((skor1String) ?? "0") ?? 0) + 0)
-			self.skor1String = "\(String(describing: self.skor1Int))"
-			self.skor1IntArray.append("0")
+			Variables.batakSkor1Int = ((Int((skor1String) ?? "0") ?? 0) + 0)
+			self.skor1String = "\(String(describing: Variables.batakSkor1Int))"
+			Variables.batakSkor1IntArray.append("0")
 		}
 		else {
 			if let value = Int(self.skor1.text!) {
-				self.skor1Int = skor1Int! + value
-				self.skor1IntArray.append(self.skor1.text!)
+				Variables.batakSkor1Int = Variables.batakSkor1Int! + value
+				Variables.batakSkor1IntArray.append(self.skor1.text!)
 			}
 		}
 		
 		if ((self.skor2.text) == nil) {
-			self.skor2Int = ((Int((skor2String) ?? "0") ?? 0) + 0)
-			self.skor2String = "\(String(describing: self.skor2Int))"
-			self.skor2IntArray.append("0")
+			Variables.batakSkor2Int = ((Int((skor2String) ?? "0") ?? 0) + 0)
+			self.skor2String = "\(String(describing: Variables.batakSkor2Int))"
+			Variables.batakSkor2IntArray.append("0")
 		}
 		else {
 			if let value = Int(self.skor2.text!) {
-				self.skor2Int = skor2Int! + value
-				self.skor2IntArray.append(self.skor2.text!)
+				Variables.batakSkor2Int = Variables.batakSkor2Int! + value
+				Variables.batakSkor2IntArray.append(self.skor2.text!)
 			}
 		}
 		
 		if ((self.skor3.text) == nil) {
-			self.skor3Int = ((Int((skor3String) ?? "0") ?? 0) + 0)
-			self.skor3String = "\(String(describing: self.skor3Int))"
-			self.skor3IntArray.append("0")
+			Variables.batakSkor3Int = ((Int((skor3String) ?? "0") ?? 0) + 0)
+			self.skor3String = "\(String(describing: Variables.batakSkor3Int))"
+			Variables.batakSkor3IntArray.append("0")
 		}
 		else {
 			if let value = Int(self.skor3.text!) {
-				self.skor3Int = skor3Int! + value
-				self.skor3IntArray.append(self.skor3.text!)
+				Variables.batakSkor3Int = Variables.batakSkor3Int! + value
+				Variables.batakSkor3IntArray.append(self.skor3.text!)
 			}
 		}
 		
 		if ((self.skor4.text) == nil) {
-			self.skor4Int = ((Int((skor4String) ?? "0") ?? 0) + 0)
-			self.skor4String = "\(String(describing: self.skor4Int))"
-			self.skor4IntArray.append("0")
+			Variables.batakSkor4Int = ((Int((skor4String) ?? "0") ?? 0) + 0)
+			self.skor4String = "\(String(describing: Variables.batakSkor4Int))"
+			Variables.batakSkor4IntArray.append("0")
 		}
 		else {
 			if let value = Int(self.skor4.text!) {
-				self.skor4Int = skor4Int! + value
-				self.skor4IntArray.append(self.skor4.text!)
+				Variables.batakSkor4Int = Variables.batakSkor4Int! + value
+				Variables.batakSkor4IntArray.append(self.skor4.text!)
 			}
 		}
 		
@@ -184,24 +206,24 @@ class DetailBatakViewController: UIViewController, UITableViewDelegate, UITableV
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return self.skor1IntArray.count + 1
+		return Variables.batakSkor1IntArray.count + 1
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		
-		if (self.skor1IntArray.count == 0) {
+		if (Variables.batakSkor1IntArray.count == 0) {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FourRowsTableViewCell
 			cell.fourRowsTableViewCellMethod(row1: "0", row2: "0", row3: "0", row4: "0", index: "")
 			return cell
 		}
 		
-		if (indexPath.row == self.skor1IntArray.count) {
+		if (indexPath.row == Variables.batakSkor1IntArray.count) {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FourRowsTableViewCell
-			cell.fourRowsTableViewCellMethod(row1: "\(String(describing: self.skor1Int!))", row2: "\(String(describing: self.skor2Int!))", row3: "\(String(describing: self.skor3Int!))", row4: "\(String(describing: self.skor4Int!))", index: "T")
+			cell.fourRowsTableViewCellMethod(row1: "\(String(describing: Variables.batakSkor1Int!))", row2: "\(String(describing: Variables.batakSkor2Int!))", row3: "\(String(describing: Variables.batakSkor3Int!))", row4: "\(String(describing: Variables.batakSkor4Int!))", index: "T")
 			return cell
 		} else {
 			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FourRowsTableViewCell
-			cell.fourRowsTableViewCellMethod(row1: self.skor1IntArray[indexPath.row], row2: self.skor2IntArray[indexPath.row], row3: self.skor3IntArray[indexPath.row], row4: self.skor4IntArray[indexPath.row], index: "\(indexPath.row + 1)")
+			cell.fourRowsTableViewCellMethod(row1: Variables.batakSkor1IntArray[indexPath.row], row2: Variables.batakSkor2IntArray[indexPath.row], row3: Variables.batakSkor3IntArray[indexPath.row], row4: Variables.batakSkor4IntArray[indexPath.row], index: "\(indexPath.row + 1)")
 			return cell
 		}
 	}
@@ -209,10 +231,10 @@ class DetailBatakViewController: UIViewController, UITableViewDelegate, UITableV
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		
 		if (self.isEdit) {
-			self.skor1Int = self.skor1Int! + (Int(self.skor1.text!) ?? 0)
-			self.skor2Int = self.skor2Int! + (Int(self.skor2.text!) ?? 0)
-			self.skor3Int = self.skor3Int! + (Int(self.skor3.text!) ?? 0)
-			self.skor4Int = self.skor4Int! + (Int(self.skor4.text!) ?? 0)
+			Variables.batakSkor1Int = Variables.batakSkor1Int! + (Int(self.skor1.text!) ?? 0)
+			Variables.batakSkor2Int = Variables.batakSkor2Int! + (Int(self.skor2.text!) ?? 0)
+			Variables.batakSkor3Int = Variables.batakSkor3Int! + (Int(self.skor3.text!) ?? 0)
+			Variables.batakSkor4Int = Variables.batakSkor4Int! + (Int(self.skor4.text!) ?? 0)
 		}
 		
 		self.isEdit = true
@@ -220,16 +242,16 @@ class DetailBatakViewController: UIViewController, UITableViewDelegate, UITableV
 			return
 		}
 		
-		self.skor1.text = self.skor1IntArray[indexPath.row]
-		self.skor2.text = self.skor2IntArray[indexPath.row]
-		self.skor3.text = self.skor3IntArray[indexPath.row]
-		self.skor4.text = self.skor4IntArray[indexPath.row]
+		self.skor1.text = Variables.batakSkor1IntArray[indexPath.row]
+		self.skor2.text = Variables.batakSkor2IntArray[indexPath.row]
+		self.skor3.text = Variables.batakSkor3IntArray[indexPath.row]
+		self.skor4.text = Variables.batakSkor4IntArray[indexPath.row]
 		self.addButton.setTitle("DÜZENLE", for: .normal)
 		
-		self.skor1Int = self.skor1Int! - (Int(self.skor1.text!) ?? 0)
-		self.skor2Int = self.skor2Int! - (Int(self.skor2.text!) ?? 0)
-		self.skor3Int = self.skor3Int! - (Int(self.skor3.text!) ?? 0)
-		self.skor4Int = self.skor4Int! - (Int(self.skor4.text!) ?? 0)
+		Variables.batakSkor1Int = Variables.batakSkor1Int! - (Int(self.skor1.text!) ?? 0)
+		Variables.batakSkor2Int = Variables.batakSkor2Int! - (Int(self.skor2.text!) ?? 0)
+		Variables.batakSkor3Int = Variables.batakSkor3Int! - (Int(self.skor3.text!) ?? 0)
+		Variables.batakSkor4Int = Variables.batakSkor4Int! - (Int(self.skor4.text!) ?? 0)
 		
 		self.clickRow = indexPath.row
 	}
@@ -238,10 +260,14 @@ class DetailBatakViewController: UIViewController, UITableViewDelegate, UITableV
 		
 		let alert = UIAlertController(title: "Error", message: "Skorları temizlemek istediğinizden emin misiniz ?", preferredStyle: .alert)
 		let actionOk = UIAlertAction(title: "EVET", style: .default) { (action:UIAlertAction) in
-			self.skor1IntArray.removeAll()
-			self.skor2IntArray.removeAll()
-			self.skor3IntArray.removeAll()
-			self.skor4IntArray.removeAll()
+			Variables.batakSkor1IntArray.removeAll()
+			Variables.batakSkor2IntArray.removeAll()
+			Variables.batakSkor3IntArray.removeAll()
+			Variables.batakSkor4IntArray.removeAll()
+			Variables.batakPlayer1Text = ""
+			Variables.batakPlayer2Text = ""
+			Variables.batakPlayer3Text = ""
+			Variables.batakPlayer4Text = ""
 			self.tableView.reloadData()
 		}
 		
@@ -281,10 +307,10 @@ class DetailBatakViewController: UIViewController, UITableViewDelegate, UITableV
 			resultVC.player4 = self.player4.text!
 		}
 		
-		resultVC.skor1 = self.skor1Int
-		resultVC.skor2 = self.skor2Int
-		resultVC.skor3 = self.skor3Int
-		resultVC.skor4 = self.skor4Int
+		resultVC.skor1 = Variables.batakSkor1Int
+		resultVC.skor2 = Variables.batakSkor2Int
+		resultVC.skor3 = Variables.batakSkor3Int
+		resultVC.skor4 = Variables.batakSkor4Int
 	}
 	
 	func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
